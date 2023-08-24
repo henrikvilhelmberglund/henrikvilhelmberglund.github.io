@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="./favicon.png" />
+		<link rel="stylesheet" href="./prism-vsc-dark-plus.css" />
+		<!-- <link rel="stylesheet" href="./unocss-fix.css" /> -->
+		<meta name="viewport" content="width=device-width" />
+		<script>
+			// Tailwind dark mode
+			// On page load or when changing themes, best to add inline in `head` to avoid FOUC
+			if (localStorage.theme === "dark") {
+				document.documentElement.classList.add("dark");
+			} else {
+				document.documentElement.classList.remove("dark");
+			}
+			if (!localStorage.color) {
+				// default
+				document.documentElement.classList.add("blue");
+			} else {
+				document.documentElement.classList.add(localStorage.color);
+			}
+		</script>
+		<link href="/_app/immutable/assets/unocss-svelte-scoped-global.b324e3e9.css" rel="stylesheet" /> 
+		<link href="./_app/immutable/assets/0.d8642756.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.1868fded.css" rel="stylesheet">
+		<link rel="modulepreload" href="./_app/immutable/entry/start.73be1544.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/scheduler.1ed64432.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/singletons.6587d97b.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/paths.51161840.js">
+		<link rel="modulepreload" href="./_app/immutable/entry/app.44a75f62.js">
+		<link rel="modulepreload" href="./_app/immutable/chunks/index.60d00f8a.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/0.65a622d6.js">
+		<link rel="modulepreload" href="./_app/immutable/nodes/2.11676567.js">
+	</head>
+
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <main class="uno-2v54cn bg-primary-100"><header><button class="uno-owzz1y bg-blue-500"></button><button class="uno-owzz1y bg-green-500"></button><button class="uno-owzz1y bg-yellow-500"></button><button class="uno-owzz1y bg-pink-500"></button> <button class="uno-541bw2"></button></header> <h1 class="uno-nbhmb5 text-primary-900" data-svelte-h="svelte-m773gp">Hello!</h1> <p class="uno-bb4k34 text-primary-900">This is the blue theme.</p> <button class="uno-bp6dfh">A blue button</button> <button class="uno-bvfdrh">A blue secondary button</button> <p class="uno-bb4k34 text-primary-900" data-svelte-h="svelte-1ukh95">Now with Melt!</p> <div class="uno-fe1gqs" data-melt-id="VWauyTJNWN" data-melt-accordion="">   <div data-state="open" data-melt-accordion-item="" class="uno-63ag4b"><h2 class="uno-v1jran"><button aria-expanded aria-disabled="false" data-value="item-1" data-state="open" data-melt-accordion-trigger="" class="uno-t3rk4y text-primary-700 ">Is it accessible? </button></h2> <div class="uno-x1fi0r" data-state="open" data-value="item-1" style="" data-melt-accordion-content=""><div class="uno-pb9ywm">Yes. It adheres to the WAI-ARIA design pattern.</div> </div> </div>   <div data-state="closed" data-melt-accordion-item="" class="uno-63ag4b"><h2 class="uno-v1jran"><button aria-expanded="false" aria-disabled="false" data-value="item-2" data-state="closed" data-melt-accordion-trigger="" class="uno-t3rk4y text-primary-700 ">Is it unstyled? </button></h2>  </div>   <div data-state="closed" data-melt-accordion-item="" class="uno-63ag4b"><h2 class="uno-v1jran"><button aria-expanded="false" aria-disabled="false" data-value="item-3" data-state="closed" data-melt-accordion-trigger="" class="uno-t3rk4y text-primary-700 uno-e8n10k">Can it be animated? </button></h2>  </div> </div></main> <footer><a class="uno-azlc6j" href="https://github.com/henrikvilhelmberglund" data-svelte-h="svelte-1136w2i">made by <img class="uno-miy8hv" src="/Henrik.png" alt="avatar">henrikvilhelmberglund</a></footer> 
+			
+			<script>
+				{
+					__sveltekit_lwk1rm = {
+						base: new URL(".", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("./_app/immutable/entry/start.73be1544.js"),
+						import("./_app/immutable/entry/app.44a75f62.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 2],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
