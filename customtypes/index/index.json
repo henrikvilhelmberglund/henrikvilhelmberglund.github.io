@@ -10,7 +10,17 @@
 				"type": "Slices",
 				"fieldset": "Slice Zone",
 				"config": {
-					"choices": {}
+					"choices": {
+						"page_title": {
+							"type": "SharedSlice"
+						},
+						"welcome_text": {
+							"type": "SharedSlice"
+						},
+						"footer": {
+							"type": "SharedSlice"
+						}
+					}
 				}
 			}
 		},

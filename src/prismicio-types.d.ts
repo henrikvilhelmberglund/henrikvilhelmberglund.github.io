@@ -4,7 +4,7 @@ import type * as prismic from "@prismicio/client";
 
 type Simplify<T> = { [KeyType in keyof T]: T[KeyType] };
 
-type IndexDocumentDataSlicesSlice = never;
+type IndexDocumentDataSlicesSlice = PageTitleSlice | WelcomeTextSlice | FooterSlice;
 
 /**
  * Content for Index documents
@@ -137,6 +137,90 @@ export type ProjectDocument<Lang extends string = string> = prismic.PrismicDocum
 export type AllDocumentTypes = IndexDocument | ProjectDocument;
 
 /**
+ * Primary content in *Footer → Items*
+ */
+export interface FooterSliceDefaultItem {
+	/**
+	 * link field in *Footer → Items*
+	 *
+	 * - **Field Type**: Link
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: footer.items[].link
+	 * - **Documentation**: https://prismic.io/docs/field#link-content-relationship
+	 */
+	link: prismic.LinkField;
+}
+
+/**
+ * Default variation for Footer Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FooterSliceDefault = prismic.SharedSliceVariation<
+	"default",
+	Record<string, never>,
+	Simplify<FooterSliceDefaultItem>
+>;
+
+/**
+ * Slice variation for *Footer*
+ */
+type FooterSliceVariation = FooterSliceDefault;
+
+/**
+ * Footer Shared Slice
+ *
+ * - **API ID**: `footer`
+ * - **Description**: Footer
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type FooterSlice = prismic.SharedSlice<"footer", FooterSliceVariation>;
+
+/**
+ * Primary content in *PageTitle → Primary*
+ */
+export interface PageTitleSliceDefaultPrimary {
+	/**
+	 * title field in *PageTitle → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: page_title.primary.title
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	title: prismic.RichTextField;
+}
+
+/**
+ * Default variation for PageTitle Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PageTitleSliceDefault = prismic.SharedSliceVariation<
+	"default",
+	Simplify<PageTitleSliceDefaultPrimary>,
+	never
+>;
+
+/**
+ * Slice variation for *PageTitle*
+ */
+type PageTitleSliceVariation = PageTitleSliceDefault;
+
+/**
+ * PageTitle Shared Slice
+ *
+ * - **API ID**: `page_title`
+ * - **Description**: PageTitle
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type PageTitleSlice = prismic.SharedSlice<"page_title", PageTitleSliceVariation>;
+
+/**
  * Primary content in *Project → Primary*
  */
 export interface ProjectSliceDefaultPrimary {
@@ -213,6 +297,48 @@ type ProjectSliceVariation = ProjectSliceDefault;
  */
 export type ProjectSlice = prismic.SharedSlice<"project", ProjectSliceVariation>;
 
+/**
+ * Primary content in *WelcomeText → Primary*
+ */
+export interface WelcomeTextSliceDefaultPrimary {
+	/**
+	 * welcometext field in *WelcomeText → Primary*
+	 *
+	 * - **Field Type**: Rich Text
+	 * - **Placeholder**: *None*
+	 * - **API ID Path**: welcome_text.primary.welcometext
+	 * - **Documentation**: https://prismic.io/docs/field#rich-text-title
+	 */
+	welcometext: prismic.RichTextField;
+}
+
+/**
+ * Default variation for WelcomeText Slice
+ *
+ * - **API ID**: `default`
+ * - **Description**: Default
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WelcomeTextSliceDefault = prismic.SharedSliceVariation<
+	"default",
+	Simplify<WelcomeTextSliceDefaultPrimary>,
+	never
+>;
+
+/**
+ * Slice variation for *WelcomeText*
+ */
+type WelcomeTextSliceVariation = WelcomeTextSliceDefault;
+
+/**
+ * WelcomeText Shared Slice
+ *
+ * - **API ID**: `welcome_text`
+ * - **Description**: WelcomeText
+ * - **Documentation**: https://prismic.io/docs/slice
+ */
+export type WelcomeTextSlice = prismic.SharedSlice<"welcome_text", WelcomeTextSliceVariation>;
+
 declare module "@prismicio/client" {
 	interface CreateClient {
 		(
@@ -230,11 +356,23 @@ declare module "@prismicio/client" {
 			ProjectDocumentData,
 			ProjectDocumentDataSlicesSlice,
 			AllDocumentTypes,
+			FooterSlice,
+			FooterSliceDefaultItem,
+			FooterSliceVariation,
+			FooterSliceDefault,
+			PageTitleSlice,
+			PageTitleSliceDefaultPrimary,
+			PageTitleSliceVariation,
+			PageTitleSliceDefault,
 			ProjectSlice,
 			ProjectSliceDefaultPrimary,
 			ProjectSliceDefaultItem,
 			ProjectSliceVariation,
 			ProjectSliceDefault,
+			WelcomeTextSlice,
+			WelcomeTextSliceDefaultPrimary,
+			WelcomeTextSliceVariation,
+			WelcomeTextSliceDefault,
 		};
 	}
 }
