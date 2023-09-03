@@ -7,6 +7,7 @@
 	import { browser } from "$app/environment";
 	import { color } from "$lib/stores";
 	import MeltAccordion from "$lib/melt-examples/MeltAccordion.svelte";
+	import H1 from "$lib/components/H1.svelte";
 
 	// let color = "blue";
 	// $: if (browser) color = localStorage.color;
@@ -19,7 +20,7 @@
 		<DarkModeToggle />
 	</header>
 
-	<h1 class="text-primary-900 dark:text-primary-100 text-9xl md:p-48 md:pb-0">Hello!</h1>
+	<H1>Welcome to my profile page!</H1>
 	<p class="text-primary-900 dark:text-primary-100">This is the {$color} theme.</p>
 	<button class="btn-primary">A {$color} button</button>
 	<button class="btn-secondary">A {$color} secondary button</button>
