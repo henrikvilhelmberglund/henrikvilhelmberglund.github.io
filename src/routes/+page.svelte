@@ -1,32 +1,24 @@
 <script>
-	import { onMount } from "svelte";
-	import { base } from "$app/paths";
 	import Footer from "$lib/Footer.svelte";
-	import DarkModeToggle from "$lib/theme/DarkModeToggle.svelte";
-	import ThemeSwitcher from "$lib/theme/ThemeSwitcher.svelte";
-	import { browser } from "$app/environment";
-	import { color } from "$lib/stores";
 	import H1 from "$lib/components/H1.svelte";
 	import { t } from "$lib/i18n/i18n";
-	import H2 from "$lib/components/H2.svelte";
 
 	// let color = "blue";
 	// $: if (browser) color = localStorage.color;
 </script>
 
-<main
-	class="dark:bg-primary-950 bg-primary-100 w-screen max-w-full flex min-h-screen flex-col items-center [&>*]:my-4">
-	<header>
-		<ThemeSwitcher />
-		<DarkModeToggle />
-	</header>
-
-	<H1>{$t("common.name")}</H1>
-	<H2>Welcome to my profile page!</H2>
-	<p class="text-primary-900 dark:text-primary-100">This is the {$color} theme.</p>
-	<button class="btn-primary">A {$color} button</button>
-	<button class="btn-secondary">A {$color} secondary button</button>
-</main>
+<section class="flex flex-col items-center pt-12">
+	<H1>{$t("common.greeting")}</H1>
+	<div
+		class="dark:bg-primary-900 mt-12 flex max-w-[90%] flex-col rounded-md bg-white p-4 text-black dark:text-white md:mt-24 md:max-w-[50%] md:p-12">
+		<p class=" text-lg">{$t("common.introduction")}</p>
+		<p class="py-6 text-lg">{$t("common.purpose")}</p>
+		<a
+			href="/projects"
+			class="hover:bg-primary-200 bg-primary-100 shadow-primary-300 dark:shadow-primary-500 self-center rounded-2xl p-2 text-4xl shadow-xl transition-all dark:text-black"
+			>{$t("nav.cta")}</a>
+	</div>
+</section>
 
 <Footer />
 
