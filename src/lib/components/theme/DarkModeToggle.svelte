@@ -29,7 +29,9 @@
 	}
 </script>
 
-<button on:click={() => toggle()} class="text-2xl i-carbon-sun dark:text-white dark:i-carbon-moon" />
+<button
+	on:click={() => toggle()}
+	class="i-carbon-sun dark:i-carbon-moon p-2 h-10 w-10 dark:h-10 dark:w-10 dark:text-white md:text-2xl" />
 
 <style>
 </style>
