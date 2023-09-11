@@ -10,9 +10,9 @@ const config = {
 		},
 		{
 			locale: "en",
-			key: "home",
-			routes: ["/"], // you can use regexes as well!
-			loader: async () => (await import("./en/home.json")).default,
+			key: "nav",
+			//routes: ["/"], // you can use regexes as well!
+			loader: async () => (await import("./en/nav.json")).default,
 		},
 		{
 			locale: "en",
@@ -27,9 +27,8 @@ const config = {
 		},
 		{
 			locale: "sv",
-			key: "home",
-			routes: ["/"],
-			loader: async () => (await import("./sv/home.json")).default,
+			key: "nav",
+			loader: async () => (await import("./sv/nav.json")).default,
 		},
 		{
 			locale: "sv",
@@ -44,9 +43,8 @@ const config = {
 		},
 		{
 			locale: "ja",
-			key: "home",
-			routes: ["/"],
-			loader: async () => (await import("./ja/home.json")).default,
+			key: "nav",
+			loader: async () => (await import("./ja/nav.json")).default,
 		},
 		{
 			locale: "ja",
