@@ -1,1 +1,5 @@
-{ "name": "Henrik Berglund" }
+{
+	"greeting": "Welcome to Henrik Berglund's portfolio page!",
+	"introduction": "My name is Henrik Berglund and I am currently a Frontend Developer Student at Nackademin. I love Svelte and UnoCSS/Tailwind. I also love creating accessible websites that are easy to use and make sense.",
+	"purpose": "The purpose of this site is to link to some of my projects. Feel free to check them out!"
+}
