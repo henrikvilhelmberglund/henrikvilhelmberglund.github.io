@@ -1,12 +1,13 @@
 <script lang="ts">
 	import { createRadioGroup, melt } from "@melt-ui/svelte";
 	import { t, locale, locales } from "$lib/i18n/i18n";
+	import { userPreferredLocale } from "$lib/stores";
 
 	const {
 		elements: { root, item, hiddenInput },
 		helpers: { isChecked },
 	} = createRadioGroup({
-		defaultValue: "en",
+		defaultValue: $userPreferredLocale,
 		orientation: "horizontal",
 	});
 
@@ -23,10 +24,13 @@
 			class:i-openmoji-flag-united-kingdom={option === "en"}
 			class:i-openmoji-flag-sweden={option === "se"}
 			class:i-openmoji-flag-japan={option === "ja"}
-			class="flex h-12 w-12 items-center gap-3 border-solid border-1">
+			class="border-1 flex h-12 w-12 items-center gap-3 border-solid">
 			<button
 				use:melt={$item(option)}
-				on:click={() => ($locale = option)}
+				on:click={() => {
+					$userPreferredLocale = option;
+					$locale = option;
+				}}
 				class="grid h-12 w-12 cursor-default place-items-center rounded-full
       shadow-sm"
 				id={option}

@@ -12,3 +12,5 @@ export const color = persisted(
 		},
 	}
 );
+
+export const userPreferredLocale = persisted("preferredLocale", "en");
