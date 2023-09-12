@@ -8,6 +8,7 @@
 	import "@unocss/reset/tailwind.css";
 	import LanguagePickerDropdown from "$lib/components/LanguagePickerDropdown.svelte";
 	import { t, locale } from "$lib/i18n/i18n";
+	import Socials from "$lib/components/Socials.svelte";
 
 	const routes = [
 		{ display: "home", url: "/" },
@@ -47,6 +48,7 @@
 		<aside class="absolute right-0 top-0 max-w-full justify-end md:hidden">
 			<LanguagePickerDropdown />
 		</aside>
+		<Socials />
 	</header>
 	<slot />
 </main>
