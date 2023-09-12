@@ -21,20 +21,20 @@ const config = {
 			loader: async () => (await import("./en/projects.json")).default,
 		},
 		{
-			locale: "sv",
+			locale: "se",
 			key: "common",
-			loader: async () => (await import("./sv/common.json")).default,
+			loader: async () => (await import("./se/common.json")).default,
 		},
 		{
-			locale: "sv",
+			locale: "se",
 			key: "nav",
-			loader: async () => (await import("./sv/nav.json")).default,
+			loader: async () => (await import("./se/nav.json")).default,
 		},
 		{
-			locale: "sv",
+			locale: "se",
 			key: "projects",
 			routes: ["/projects"],
-			loader: async () => (await import("./sv/projects.json")).default,
+			loader: async () => (await import("./se/projects.json")).default,
 		},
 		{
 			locale: "ja",
