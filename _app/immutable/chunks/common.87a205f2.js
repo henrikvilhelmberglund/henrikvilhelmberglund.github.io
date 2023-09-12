@@ -1,0 +1,1 @@
+const n="ベルグルンド・ヘンリックのポートフォリオサイトへようこそ！",o="ベルグルンド・ヘンリックと申します。スウェーデンのNackademinにてフロンドエンド開発を勉強中です。SvelteとUnoCSS・Tailwindが大好きで、アクセシビリティで使いやすい且つ使い勝手が良いサイトを作るのも大好きです。",t="このサイトの目的は自分が作ったサイトをリンクしてアピールすることです。是非ご覧ください！",e={greeting:n,introduction:o,purpose:t};export{e as default,n as greeting,o as introduction,t as purpose};

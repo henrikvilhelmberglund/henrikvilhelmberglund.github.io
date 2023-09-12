@@ -1,0 +1,1 @@
+const t="Här är några av mina projekt. De är hostade på olika plattformar som Github Pages, Vercel och Cloudflare Pages.",o="Projekt",e={introduction:t,title:o};export{e as default,t as introduction,o as title};
