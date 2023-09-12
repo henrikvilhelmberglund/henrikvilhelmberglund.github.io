@@ -10,7 +10,7 @@
 		orientation: "horizontal",
 	});
 
-	const optionsArr = ["en", "sv", "ja"];
+	const optionsArr = ["en", "se", "ja"];
 </script>
 
 <div
@@ -21,7 +21,7 @@
 		<div
 			class:border-orange-500={$isChecked(option)}
 			class:i-openmoji-flag-united-kingdom={option === "en"}
-			class:i-openmoji-flag-sweden={option === "sv"}
+			class:i-openmoji-flag-sweden={option === "se"}
 			class:i-openmoji-flag-japan={option === "ja"}
 			class="flex h-12 w-12 items-center gap-3 border-solid border-1">
 			<button

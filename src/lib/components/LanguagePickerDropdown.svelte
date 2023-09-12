@@ -3,7 +3,7 @@
 	import { fly } from "svelte/transition";
 	import { t, locale, locales } from "$lib/i18n/i18n";
 
-	const optionsArr = ["en", "sv", "ja"];
+	const optionsArr = ["en", "se", "ja"];
 
 	const {
 		elements: { menu, item, trigger, arrow },
@@ -13,7 +13,7 @@
 
 <button
 	class:i-openmoji-flag-united-kingdom={$locale === "en"}
-	class:i-openmoji-flag-sweden={$locale === "sv"}
+	class:i-openmoji-flag-sweden={$locale === "se"}
 	class:i-openmoji-flag-japan={$locale === "ja"}
 	class="mt-3 h-[40px] w-[40px]"
 	use:melt={$trigger} />
@@ -25,7 +25,7 @@
 				<div class="flex h-12 w-12 items-center gap-3">
 					<button
 						class:i-openmoji-flag-united-kingdom={option === "en"}
-						class:i-openmoji-flag-sweden={option === "sv"}
+						class:i-openmoji-flag-sweden={option === "se"}
 						class:i-openmoji-flag-japan={option === "ja"}
 						on:click={() => ($locale = option)}
 						class="grid h-12 w-12 cursor-default place-items-center rounded-full
