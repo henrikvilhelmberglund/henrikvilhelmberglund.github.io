@@ -34,6 +34,7 @@
 					class="hover:bg-primary-200 dark:hover:bg-primary-900 dark:bg-primary-950 rounded bg-white bg-white p-2 text-3xl text-black dark:text-white"
 					href={url}>{$t(`nav.${display}`)}</a>
 			{/each}
+			<Socials />
 		</nav>
 		<aside class="absolute left-0 top-2 hidden lg:block">
 			<ThemeSwitcher />
@@ -48,7 +49,6 @@
 		<aside class="absolute right-0 top-0 max-w-full justify-end md:hidden">
 			<LanguagePickerDropdown />
 		</aside>
-		<Socials />
 	</header>
 	<slot />
 </main>
