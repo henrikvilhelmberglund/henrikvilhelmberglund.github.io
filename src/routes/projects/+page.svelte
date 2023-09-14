@@ -8,7 +8,6 @@
 
 <section class="flex flex-col items-center pt-12">
 	<H1>{$t("projects.title")}</H1>
-	<!-- TODO refactor into component (make it look the same as / route) -->
 	<WhiteTextBox>
 		<p class=" text-lg">{$t("projects.introduction")}</p>
 	</WhiteTextBox>
