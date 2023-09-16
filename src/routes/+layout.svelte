@@ -7,8 +7,11 @@
 	import ThemeSwitcher from "$lib/components/theme/ThemeSwitcher.svelte";
 	import "@unocss/reset/tailwind.css";
 	import LanguagePickerDropdown from "$lib/components/LanguagePickerDropdown.svelte";
-	import { t, locale } from "$lib/i18n/i18n";
+	import { t } from "$lib/i18n/i18n";
 	import Socials from "$lib/components/Socials.svelte";
+	import { setContext } from "svelte";
+
+	export let data;
 
 	const routes = [
 		{ display: "home", url: "/" },
@@ -19,6 +22,8 @@
 	$: if (browser) {
 		currentPage = $page.route;
 	}
+
+	setContext("locale", data.locale);
 
 	// $: console.log($locale);
 </script>

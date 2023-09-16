@@ -10,9 +10,9 @@ export const load = async ({ url }) => {
 	const { pathname } = url;
 
 	// TODO this will always give English as a default when SSRed, not sure if fixable
-	const initLocale = get(locale) ? get(locale) : get(userPreferredLocale); // get from cookie, user session, ...
+	const initLocale = get(userPreferredLocale) ? get(userPreferredLocale) : "en"; // get from cookie, user session, ...
 
 	await loadTranslations(initLocale, pathname); // keep this just before the `return`
 
-	return {};
+	return { locale };
 };
