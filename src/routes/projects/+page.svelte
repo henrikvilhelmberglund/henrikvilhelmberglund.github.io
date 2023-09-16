@@ -16,17 +16,17 @@
 	<div class="mt-8 flex flex-wrap">
 		{#each Object.entries(projects) as [key, { url, github }]}
 			<article
-				class="dark:bg-primary-900 m-2 flex flex-col rounded rounded-t-xl bg-white dark:text-white md:h-[500px] md:w-[500px]">
+				class="dark:bg-primary-900 m-2 flex flex-col rounded rounded-t-xl bg-white dark:text-white md:h-fit md:w-[500px]">
 				<div class="relative [&>*]:rounded-t-xl">
 					<h2 class="p-2 text-center text-4xl">{key}</h2>
 					<div
-						class="bg-primary-900/15 mask-bg-hero-diagonal-stripes absolute left-0 top-0 h-full w-full" />
+						class="bg-primary-900/15 mask-bg-hero-diagonal-stripes dark:bg-primary-100/5 absolute left-0 top-0 h-full w-full" />
 				</div>
 				<div class="flex flex-1 flex-col p-4">
-					<p class="flex-1 break-words text-center text-xl">
+					<p class="flex-1 break-words text-xl">
 						{@html sanitize(marked.parse($t(`projects.${key}.desc`)))}
 					</p>
-					<a class="text-blue-600 dark:text-blue-300" href={url}>{url}</a>
+					<a class="md:mt-6 text-blue-600 dark:text-blue-300" href={url}>{url}</a>
 					<a class="text-blue-600 dark:text-blue-300" href={github}>{github}</a>
 				</div>
 			</article>
