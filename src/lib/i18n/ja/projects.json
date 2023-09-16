@@ -1,6 +1,6 @@
 {
-  "introduction": "ここにプロジェクトのいくつかを紹介します。これらは、**Github Pages**、**Vercel**、**Cloudflare Pages** などのさまざまなプラットフォームでホストされています。",
-  "title": "プロジェクト",
-  "keyboard.desc": "キーボードは、キーボード、マウス、またはモバイルを使用して演奏するためのシンプルな仮想楽器です。\nオーディオサンプルには [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") を使用しています。",
-  "branschdag-2023-03.desc": "Branschdag-23-03 は、Nackademin の「branschdag」イベントで企業を簡単に見つけるために私が作成したアプリです。\n教室をクリックするとそこにいる企業を確認したり、学問でフィルターして興味のある企業のみを表示したり、企業名をクリックして情報を確認したりできます。"
+	"introduction": "ここにプロジェクトのいくつかを紹介します。これらは、**Github Pages**、**Vercel**、**Cloudflare Pages** などのさまざまなプラットフォームでホストされています。",
+	"title": "プロジェクト",
+	"keyboard.desc": "キーボードは、キーボード、マウス、またはモバイルを使用して演奏するためのシンプルな仮想楽器です。オーディオサンプルには [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") を使用しています。",
+	"branschdag-2023-03.desc": "Branschdag-23-03 は、Nackademin の「branschdag」イベントで企業を簡単に見つけるために私が作成したアプリです。教室をクリックするとそこにいる企業を確認したり、学問でフィルターして興味のある企業のみを表示したり、企業名をクリックして情報を確認したりできます。"
 }
