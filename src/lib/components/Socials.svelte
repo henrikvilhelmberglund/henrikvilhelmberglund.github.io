@@ -9,10 +9,14 @@
 	];
 </script>
 
-<section class="shadow-primary-200 dark:shadow-primary-800 shadow-lg right-0 top-14 absolute self-baseline gap-3 rounded-t-0 flex rounded-md bg-white dark:bg-primary-950">
+<section
+	class="shadow-primary-200 dark:shadow-primary-800 absolute top-12 dark:bg-primary-950 flex gap-2 self-baseline bg-white p-1">
 	<h2 class="hidden text-center text-2xl">Socials</h2>
 	{#each socials as { link, name, icon }}
-		<a target="_blank" href={link}>
+		<a
+			class="hover:dark:bg-primary-900 hover:bg-primary-200 rounded-md"
+			target="_blank"
+			href={link}>
 			<article
 				class:i-mdi-twitter={name === "Twitter"}
 				class:!text-blue-400={name === "Twitter"}

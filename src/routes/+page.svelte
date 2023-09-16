@@ -8,7 +8,7 @@
 	// $: if (browser) color = localStorage.color;
 </script>
 
-<section class="flex flex-col items-center pt-12">
+<section class="flex flex-col items-center pt-20">
 	<H1>{$t("common.greeting")}</H1>
 	<WhiteTextBox>
 		<p class=" text-lg">{$t("common.introduction")}</p>

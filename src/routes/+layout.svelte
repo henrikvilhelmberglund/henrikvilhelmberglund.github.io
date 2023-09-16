@@ -32,7 +32,7 @@
 	class="dark:bg-primary-950 bg-primary-100 font-quicksand flex min-h-screen w-screen max-w-full flex-col items-center">
 	<header class="flex">
 		<nav
-			class="shadow-primary-200 dark:shadow-primary-800 dark:bg-primary-950 relative flex h-14 w-screen max-w-full items-center justify-center gap-12 bg-white shadow-lg">
+			class="shadow-primary-200 dark:shadow-primary-800 dark:bg-primary-950 relative flex h-14  max-w-full items-center justify-center gap-12 bg-white shadow-lg">
 			{#each routes as { url, display }}
 				<a
 					class:shadow-inner={url === currentPage?.id}
@@ -45,7 +45,7 @@
 			<ThemeSwitcher />
 			<DarkModeToggle />
 		</aside>
-		<aside class="absolute md:hidden">
+		<aside class="absolute left-0 md:hidden">
 			<ThemeDropdown />
 		</aside>
 		<aside class="absolute right-0 top-0 hidden max-w-full justify-end md:block">

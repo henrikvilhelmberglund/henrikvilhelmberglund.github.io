@@ -31,7 +31,7 @@
 
 <button
 	on:click={() => toggle()}
-	class="i-carbon-sun dark:i-carbon-moon p-2 h-10 w-10 dark:h-10 dark:w-10 dark:text-white md:text-2xl" />
+	class="i-carbon-sun dark:i-carbon-moon p-2 h-10 w-10 align-inherit dark:align-inherit dark:h-10 dark:w-10 dark:text-white md:text-2xl" />
 
 <style>
 </style>
