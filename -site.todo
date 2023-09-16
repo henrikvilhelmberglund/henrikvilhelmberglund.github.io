@@ -1,0 +1,5 @@
+✔ use store wrapped in context to prevent shared state on server (only useful when deployed on something else than Github but good practice) @done(23-09-16 19:07)
+☐ add translations and text for projects
+☐ add portfolio as a project
+☐ accessibility
+☐ SEO

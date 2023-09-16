@@ -1,1 +1,0 @@
-☐ use store wrapped in context to prevent shared state on server (only useful when deployed on something else than Github but good practice)
