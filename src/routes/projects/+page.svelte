@@ -9,7 +9,7 @@
 <section class="flex flex-col items-center pt-12">
 	<H1>{$t("projects.title")}</H1>
 	<WhiteTextBox>
-		<p class=" text-lg">{$t("projects.introduction")}</p>
+		<p class="text-lg">{$t("projects.introduction")}</p>
 	</WhiteTextBox>
 	{#each Object.entries(projects) as [key, { url, github }]}
 		<article class="m-2 rounded bg-white p-4">
