@@ -1,5 +1,5 @@
 export const prerender = true;
-// export const ssr = false;
+// export const ssr = true;
 
 import { loadTranslations, locale } from "$lib/i18n/i18n";
 import { userPreferredLocale } from "$lib/stores";
