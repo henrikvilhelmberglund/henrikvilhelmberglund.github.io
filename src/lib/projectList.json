@@ -10,5 +10,17 @@
 		"url": "https://henrikvilhelmberglund.com/branschdag-2023-03/",
 		"github": "https://github.com/henrikvilhelmberglund/branschdag-2023-03",
 		"hostedOn": "Github Pages"
+	},
+	"Grafikverktyg2022": {
+		"displayName": "Grafikverktyg2022",
+		"url": "https://grafikverktyg2022.henrikvilhelmberglund.com",
+		"github": "https://github.com/henrikvilhelmberglund/Grafikverktyg2022",
+		"hostedOn": "Vercel"
+	},
+  "Tutorials": {
+		"displayName": "Tutorials",
+		"url": "https://tutorials.henrikvilhelmberglund.com",
+		"github": "https://github.com/henrikvilhelmberglund/Tutorials",
+		"hostedOn": "Cloudflare Pages"
 	}
 }
