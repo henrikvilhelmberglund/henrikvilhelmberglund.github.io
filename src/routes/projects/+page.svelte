@@ -26,6 +26,7 @@
 					<p class="markdown flex-1 break-words text-xl">
 						{@html sanitize(marked.parse($t(`projects.${key}.desc`)))}
 					</p>
+          <!-- TODO add icons for hostedOn and Github before the links -->
 					<a class="text-blue-600 dark:text-blue-300 md:mt-6" href={url}>{url}</a>
 					<a class="text-blue-600 dark:text-blue-300" href={github}>{github}</a>
 				</div>
