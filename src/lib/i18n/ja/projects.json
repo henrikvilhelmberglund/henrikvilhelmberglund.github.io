@@ -1,4 +1,5 @@
 {
   "introduction": "ここにプロジェクトのいくつかを紹介します。\nこれらは、Github Pages、Vercel、Cloudflare Pages などのさまざまなプラットフォームでホストされています。",
-  "title": "プロジェクト"
+  "title": "プロジェクト",
+  "keyboard.desc": "キーボードは、キーボード、マウス、またはモバイルを使用して演奏するためのシンプルな仮想楽器です。\nオーディオサンプルには [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") を使用しています。"
 }

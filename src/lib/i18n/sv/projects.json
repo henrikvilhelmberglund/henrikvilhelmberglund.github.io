@@ -1,4 +1,5 @@
 {
   "introduction": "Här är några av mina projekt. De är hostade på olika plattformar som Github Pages, Vercel och Cloudflare Pages.",
-  "title": "Projekt"
+  "title": "Projekt",
+  "keyboard.desc": "Keyboard är ett enkelt virtuellt instrument som du kan spela med ditt tangentbord, mus eller mobil. \nDet använder [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") för samples."
 }
