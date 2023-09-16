@@ -10,7 +10,7 @@
 </script>
 
 <section
-	class="shadow-primary-200 dark:shadow-primary-800 absolute top-12 dark:bg-primary-950 flex gap-2 self-baseline bg-white p-1">
+	class="shadow-primary-200 dark:shadow-primary-800 absolute shadow-lg top-14 dark:bg-primary-950 flex gap-2 self-baseline bg-white p-1">
 	<h2 class="hidden text-center text-2xl">Socials</h2>
 	{#each socials as { link, name, icon }}
 		<a

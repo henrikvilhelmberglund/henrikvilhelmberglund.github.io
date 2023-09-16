@@ -8,7 +8,7 @@
 	$: projects = data.projects;
 </script>
 
-<section class="flex flex-col items-center  w-full pt-12">
+<section class="flex flex-col items-center  w-full pt-20">
 	<H1>{$t("projects.title")}</H1>
 	<WhiteTextBox>
 		<p class="text-lg">{$t("projects.introduction")}</p>
