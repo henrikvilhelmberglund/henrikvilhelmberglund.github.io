@@ -1,5 +1,6 @@
 {
   "introduction": "Här är några av mina projekt. De är hostade på olika plattformar som Github Pages, Vercel och Cloudflare Pages.",
   "title": "Projekt",
-  "keyboard.desc": "Keyboard är ett enkelt virtuellt instrument som du kan spela med ditt tangentbord, mus eller mobil. \nDet använder [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") för samples."
+  "keyboard.desc": "Keyboard är ett enkelt virtuellt instrument som du kan spela med ditt tangentbord, mus eller mobil. \nDet använder [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") för ljudsamples.",
+  "branschdag-2023-03.desc": "Branschdag-23-03 är en app som jag gjort för att göra det enklare att hitta företagen på Nackademins branschdag-evenemang. \nDu kan klicka på klassrummen för att se vilka företag som finns där, filtrera efter ditt ämne för att bara se företag som är intressanta för dig och klicka på företagens namn för att se deras information."
 }
