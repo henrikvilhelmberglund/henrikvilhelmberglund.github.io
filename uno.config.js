@@ -71,6 +71,7 @@ export default defineConfig({
 		presetIcons({
 			extraProperties: {
 				display: "inline-block",
+				"vertical-align": "middle",
 				// ...
 			},
 		}),
