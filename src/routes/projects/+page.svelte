@@ -23,10 +23,10 @@
 						class="bg-primary-900/15 mask-bg-hero-diagonal-stripes dark:bg-primary-100/5 absolute left-0 top-0 h-full w-full" />
 				</div>
 				<div class="flex flex-1 flex-col p-4">
-					<p class="flex-1 break-words text-xl">
+					<p class="markdown flex-1 break-words text-xl">
 						{@html sanitize(marked.parse($t(`projects.${key}.desc`)))}
 					</p>
-					<a class="md:mt-6 text-blue-600 dark:text-blue-300" href={url}>{url}</a>
+					<a class="text-blue-600 dark:text-blue-300 md:mt-6" href={url}>{url}</a>
 					<a class="text-blue-600 dark:text-blue-300" href={github}>{github}</a>
 				</div>
 			</article>
@@ -36,7 +36,7 @@
 
 <style>
 	/* for links inside i18n .json */
-	:global(a) {
+	:global(.markdown a) {
 		@apply dark-text-blue-300 text-blue-600;
 	}
 </style>
