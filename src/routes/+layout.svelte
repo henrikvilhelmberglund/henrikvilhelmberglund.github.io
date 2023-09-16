@@ -35,8 +35,8 @@
 			class="shadow-primary-200 dark:shadow-primary-800 dark:bg-primary-950 relative flex h-14  max-w-full items-center justify-center gap-12 bg-white shadow-lg">
 			{#each routes as { url, display }}
 				<a
-					class:shadow-inner={url === currentPage?.id}
-					class="hover:bg-primary-200 dark:hover:bg-primary-900 dark:bg-primary-950 rounded bg-white bg-white p-2 text-3xl text-black dark:text-white"
+					class:underline={url === currentPage?.id}
+					class="hover:bg-primary-200 underline-offset-4 decoration-2 underline-primary-300 dark:hover:bg-primary-900 dark:bg-primary-950 rounded bg-white bg-white p-2 text-3xl text-black dark:text-white"
 					href={url}>{$t(`nav.${display}`)}</a>
 			{/each}
 			<Socials />
