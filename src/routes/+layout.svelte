@@ -10,6 +10,7 @@
 	import { t } from "$lib/i18n/i18n";
 	import Socials from "$lib/components/Socials.svelte";
 	import { setContext } from "svelte";
+	import Footer from "$lib/Footer.svelte";
 
 	export let data;
 
@@ -32,11 +33,11 @@
 	class="dark:bg-primary-950 bg-primary-100 font-quicksand flex min-h-screen w-screen max-w-full flex-col items-center">
 	<header class="flex">
 		<nav
-			class="shadow-primary-200 dark:shadow-primary-800 dark:bg-primary-950 relative flex h-14  max-w-full items-center justify-center gap-12 bg-white shadow-lg">
+			class="shadow-primary-200 dark:shadow-primary-800 dark:bg-primary-950 relative flex h-14 max-w-full items-center justify-center gap-12 bg-white shadow-lg">
 			{#each routes as { url, display }}
 				<a
 					class:underline={url === currentPage?.id}
-					class="hover:bg-primary-200 underline-offset-4 decoration-2 underline-primary-300 dark:hover:bg-primary-900 dark:bg-primary-950 rounded bg-white bg-white p-2 text-3xl text-black dark:text-white"
+					class="hover:bg-primary-200 underline-primary-300 dark:hover:bg-primary-900 dark:bg-primary-950 rounded bg-white bg-white p-2 text-3xl text-black decoration-2 underline-offset-4 dark:text-white"
 					href={url}>{$t(`nav.${display}`)}</a>
 			{/each}
 			<Socials />
@@ -57,6 +58,8 @@
 	</header>
 	<slot />
 </main>
+
+<Footer />
 
 <style>
 </style>

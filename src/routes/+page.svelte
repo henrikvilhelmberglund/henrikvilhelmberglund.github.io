@@ -1,5 +1,4 @@
 <script>
-	import Footer from "$lib/Footer.svelte";
 	import H1 from "$lib/components/H1.svelte";
 	import WhiteTextBox from "$lib/components/WhiteTextBox.svelte";
 	import { t } from "$lib/i18n/i18n";
@@ -20,7 +19,6 @@
 	</WhiteTextBox>
 </section>
 
-<Footer />
 
 <style>
 </style>
