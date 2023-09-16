@@ -14,7 +14,7 @@
 		<p class="text-lg">{$t("projects.introduction")}</p>
 	</WhiteTextBox>
 	<div class="mt-8 flex flex-wrap">
-		{#each Object.entries(projects) as [key, { url, github }]}
+		{#each Object.entries(projects) as [key, { url, github, hostedOn }]}
 			<article
 				class="dark:bg-primary-900 m-2 flex flex-col rounded rounded-t-xl bg-white dark:text-white md:h-fit md:w-[500px]">
 				<div class="relative [&>*]:rounded-t-xl">
@@ -22,13 +22,22 @@
 					<div
 						class="bg-primary-900/15 mask-bg-hero-diagonal-stripes dark:bg-primary-100/5 absolute left-0 top-0 h-full w-full" />
 				</div>
-				<div class="flex flex-1 flex-col p-4">
-					<p class="markdown flex-1 break-words text-xl">
+				<div class="flex flex-1 flex-col gap-4 p-4">
+					<p class="markdown flex-1 break-words">
 						{@html sanitize(marked.parse($t(`projects.${key}.desc`)))}
 					</p>
-          <!-- TODO add icons for hostedOn and Github before the links -->
-					<a class="text-blue-600 dark:text-blue-300 md:mt-6" href={url}>{url}</a>
-					<a class="text-blue-600 dark:text-blue-300" href={github}>{github}</a>
+					<div class="md:mt-6">
+						<span
+							class="text-2xl"
+							class:i-devicon-vercel-wordmark={hostedOn === "Vercel"}
+							class:i-devicon-github-wordmark={hostedOn === "Github Pages"} />
+              <!-- TODO add the rest of the sites -->
+						<a class="text-blue-600 dark:text-blue-300 align-middle" href={url}>{url}</a>
+					</div>
+					<div>
+						<span class="i-devicon-github text-2xl" />
+						<a class="text-blue-600 dark:text-blue-300 align-middle" href={github}>{github}</a>
+					</div>
 				</div>
 			</article>
 		{/each}
