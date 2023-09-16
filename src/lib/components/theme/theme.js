@@ -4,7 +4,25 @@ import { colors } from "@unocss/preset-mini";
 export const themes = createThemes([
 	{ name: "blue", primary: colors.blue, secondary: colors.purple, gray: colors.slate },
 	{ name: "green", primary: colors.green, secondary: colors.orange, gray: colors.gray },
-	{ name: "yellow", primary: colors.yellow, secondary: colors.pink, gray: colors.stone },
+	{
+		name: "svelty",
+		primary: {
+			50: "#fff5ec",
+			100: "#ffe9d3",
+			200: "#ffcea5",
+			300: "#ffac6d",
+			400: "#ff7d32",
+			500: "#ff590a",
+			600: "#ff3e00",
+			700: "#cc2902",
+			800: "#a1210b",
+			900: "#821e0c",
+			950: "#460b04",
+		},
+
+		secondary: colors.pink,
+		gray: colors.stone,
+	},
 	{ name: "pink", primary: colors.pink, secondary: colors.rose, gray: colors.stone },
 ]);
 export const themeColors = Object.entries(themes).map((theme) => {
