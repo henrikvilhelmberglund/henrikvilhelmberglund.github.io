@@ -1,8 +1,8 @@
 {
 	"introduction": "ここにプロジェクトのいくつかを紹介します。これらは、**Github Pages**、**Vercel**、**Cloudflare Pages** などのさまざまなプラットフォームでホストされています。",
 	"title": "プロジェクト",
-	"keyboard.desc": "キーボードは、キーボード、マウス、またはモバイルを使用して演奏するためのシンプルな仮想楽器です。オーディオサンプルには [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") を使用しています。",
-	"branschdag-2023-03.desc": "Branschdag-23-03 は、Nackademin の「branschdag」イベントで企業を簡単に見つけるために私が作成したアプリです。教室をクリックするとそこにいる企業を確認したり、学問でフィルターして興味のある企業のみを表示したり、企業名をクリックして情報を確認したりできます。",
+	"keyboard.desc": "**キーボード**は、キーボード、マウス、またはモバイルを使用して演奏するためのシンプルな仮想楽器です。オーディオサンプルには [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") を使用しています。",
+	"branschdag-2023-03.desc": "**Branschdag-23-03**は、Nackademin の「branschdag」イベントで企業を簡単に見つけるために私が作成したアプリです。教室をクリックするとそこにいる企業を確認したり、学問でフィルターして興味のある企業のみを表示したり、企業名をクリックして情報を確認したりできます。",
 	"henrikvilhelmberglund.github.io.desc": "**henrikvilhelmberglund.github.io** は私のポートフォリオサイトであり、今あなた読んで下さっているサイトです。カスタムドメインを使用しているため、URL が少し上記とは異なります。このサイトでは、私のプロジェクトのいくつかをリストし、SNSへのリンクを掲載しています。このプロジェクトでは初めて本当の「i18n」に触れ、[sveltekit-i18n](https://github.com/sveltekit-i18n/lib) と VSCode 拡張機能 [i18n-ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)を使用しました。",
 	"Grafikverktyg2022.desc": "**Grafikverktyg2022** は、Figma に簡単にインポートできるカラーパレットを作成するために作成したアプリです。また、[uicolors.app](https://uicolors.app/) に色を送信することもできます。",
 	"Tutorials.desc": "**Tutorials** は、後で参照したいものを投稿するためのブログです。これには、FreecodecampのYouTubeチャンネルにあったLi Hau Tan氏によるSvelteコースからSvelteを学んだ投稿や、VSCodeのワークフローの改善投稿などが含まれています。"
