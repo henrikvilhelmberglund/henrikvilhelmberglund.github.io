@@ -23,7 +23,10 @@
 	} = createDropdownMenu();
 </script>
 
-<button class="i-carbon:color-palette !bg-primary-900 mt-3 h-[40px] w-[40px]" use:melt={$trigger} />
+<button
+	class="i-carbon:color-palette !bg-primary-900 mt-3 h-[40px] w-[40px]"
+	aria-label="theme picker"
+	use:melt={$trigger} />
 {#if $open}
 	<div class="!left-0" use:melt={$menu} transition:fly={{ duration: 150, y: -10 }}>
 		<div
@@ -36,7 +39,7 @@
 					class:bg-blue-500={themeColor === "blue"}
 					class:bg-[#ff7d32]={themeColor === "svelty"}
 					class="item h-10 w-10 rounded p-2 text-transparent md:p-2"
-					aria-label="theme picker" />
+					aria-label="theme: {themeColor}" />
 			{/each}
 			<DarkModeToggle />
 		</div>
