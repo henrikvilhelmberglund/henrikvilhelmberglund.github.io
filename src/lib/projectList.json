@@ -17,10 +17,16 @@
 		"github": "https://github.com/henrikvilhelmberglund/Grafikverktyg2022",
 		"hostedOn": "Vercel"
 	},
-  "Tutorials": {
+	"Tutorials": {
 		"displayName": "Tutorials",
 		"url": "https://tutorials.henrikvilhelmberglund.com",
 		"github": "https://github.com/henrikvilhelmberglund/Tutorials",
 		"hostedOn": "Cloudflare Pages"
+	},
+	"henrikvilhelmberglund.github.io": {
+		"displayName": "henrikvilhelmberglund.github.io",
+		"url": "https://henrikvilhelmberglund.github.io",
+		"github": "https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io",
+		"hostedOn": "Github Pages"
 	}
 }
