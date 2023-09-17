@@ -16,6 +16,7 @@
 	class:i-openmoji-flag-sweden={$locale === "sv"}
 	class:i-openmoji-flag-japan={$locale === "ja"}
 	class="mt-3 h-[40px] w-[40px]"
+	aria-label="language picker"
 	use:melt={$trigger} />
 {#if $open}
 	<div class="" use:melt={$menu} transition:fly={{ duration: 150, y: -10 }}>
