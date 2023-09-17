@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.0.1](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/compare/v1.0.0...v1.0.1) (2023-09-17)
+
+
+### Bug Fixes
+
+* :lipstick: fix icon alignment ([0c59f6d](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/0c59f6db1758df827cc761d588a7799b709d3e73))
+* :wheelchair: add aria label for language picker main  button ([2f9001b](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/2f9001ba931fc491be541b0ba4adab0f4fa7645e))
+* :wheelchair: fix theme dropdown aria labels ([acd0a33](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/acd0a33ca7e402894c7c43e45d9c8b97762bc55c))
+* :wheelchair: add aria-labels for mobile dropdowns ([c515732](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/c51573211bf1ddabf3bb59ef92060caba299a7c8))
+
 ## 1.0.0 (2023-09-17)
 
 
