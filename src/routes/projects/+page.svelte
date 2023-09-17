@@ -2,7 +2,7 @@
 	import H1 from "$lib/components/H1.svelte";
 	import WhiteTextBox from "$lib/components/WhiteTextBox.svelte";
 	import { t } from "$lib/i18n/i18n";
-	import { sanitize } from "isomorphic-dompurify";
+	import DOMPurify from 'isomorphic-dompurify';
 	import { marked } from "marked";
 
 	export let data;
@@ -10,9 +10,9 @@
 </script>
 
 <section class="flex w-full flex-col items-center pt-20">
-	<H1>{@html sanitize(marked.parse($t("projects.title")))}</H1>
+	<H1>{@html DOMPurify.sanitize(marked.parse($t("projects.title")))}</H1>
 	<WhiteTextBox>
-		<p class="text-lg">{@html sanitize(marked.parse($t("projects.introduction")))}</p>
+		<p class="text-lg">{@html DOMPurify.sanitize(marked.parse($t("projects.introduction")))}</p>
 	</WhiteTextBox>
 	<div class="mt-8 flex w-full flex-wrap md:w-[60vw] md:justify-center md:gap-8 md:pb-24">
 		{#each Object.entries(projects) as [key, { url, github, hostedOn }]}
@@ -27,7 +27,7 @@
 				</div>
 				<div class="flex flex-1 flex-col gap-4 p-4">
 					<p class="markdown flex-1 break-words">
-						{@html sanitize(marked.parse($t(`projects.${key}.desc`)))}
+						{@html DOMPurify.sanitize(marked.parse($t(`projects.${key}.desc`)))}
 					</p>
 					<div class="md:mt-6">
 						<span
