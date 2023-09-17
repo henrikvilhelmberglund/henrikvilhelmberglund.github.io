@@ -9,8 +9,14 @@
 	import LanguagePickerDropdown from "$lib/components/LanguagePickerDropdown.svelte";
 	import { t } from "$lib/i18n/i18n";
 	import Socials from "$lib/components/Socials.svelte";
-	import { setContext } from "svelte";
+	import { onMount, setContext } from "svelte";
 	import Footer from "$lib/Footer.svelte";
+
+	let loaded = false;
+
+	onMount(() => {
+		loaded = true;
+	});
 
 	export let data;
 
@@ -27,17 +33,32 @@
 	setContext("locale", data.locale);
 
 	// $: console.log($locale);
+
+	// ? View transitions
+
+	import { onNavigate } from "$app/navigation";
+
+	onNavigate((navigation) => {
+		if (!document.startViewTransition) return;
+
+		return new Promise((resolve) => {
+			document.startViewTransition(async () => {
+				resolve();
+				await navigation.complete;
+			});
+		});
+	});
 </script>
 
 <main
-	class="dark:bg-primary-950 bg-primary-100 font-quicksand flex min-h-screen w-screen max-w-full flex-col items-center">
-	<header class="flex">
-		<nav
-			class="shadow-primary-200 dark:shadow-primary-800 dark:bg-primary-950 relative flex h-14 max-w-full items-center justify-center gap-12 bg-white shadow-lg">
+	class="dark:bg-primary-950 bg-primary-100 font-quicksand flex min-h-screen w-screen flex-col items-center">
+	<header
+		class="dark:bg-primary-900 shadow-primary-200 dark:shadow-primary-800 flex w-full justify-center bg-white shadow-lg">
+		<nav class="  relative flex h-14 max-w-full items-center justify-center gap-12">
 			{#each routes as { url, display }}
 				<a
 					class:underline={url === currentPage?.id}
-					class="hover:bg-primary-200 underline-primary-300 dark:hover:bg-primary-900 dark:bg-primary-950 rounded bg-white bg-white p-2 text-3xl text-black decoration-2 underline-offset-4 dark:text-white"
+					class="hover:bg-primary-200 underline-primary-300 dark:underline-primary-600 dark:hover:bg-primary-950 dark:bg-primary-900 rounded bg-white bg-white p-2 text-3xl text-black decoration-2 underline-offset-4 dark:text-white"
 					href={url}>{$t(`nav.${display}`)}</a>
 			{/each}
 			<Socials />
@@ -56,7 +77,14 @@
 			<LanguagePickerDropdown />
 		</aside>
 	</header>
-	<slot />
+	{#if !loaded}
+		<div class="fixed flex h-[100vh] w-[100vw] items-center justify-center">
+			<span class="i-carbon-sun h-32 w-32 animate-spin" />
+			<p class="text-2xl">Loading...</p>
+		</div>
+	{:else}
+		<slot />
+	{/if}
 </main>
 
 <Footer />
