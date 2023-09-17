@@ -36,17 +36,17 @@
 					</p>
 					<div class="md:mt-6">
 						<span
-							class="text-2xl"
+							class="text-2xl align-bottom"
 							title={hostedOn}
 							class:i-devicon-vercel-wordmark={hostedOn === "Vercel"}
 							class:i-devicon-cloudflare-wordmark={hostedOn === "Cloudflare Pages"}
 							class:i-devicon-github-wordmark={hostedOn === "Github Pages"} />
-						<a class="break-words align-middle text-blue-600 dark:text-blue-300" href={url}>
+						<a class="break-words text-blue-600 dark:text-blue-300" href={url}>
 							{url}</a>
 					</div>
 					<div>
-						<span class="i-devicon-github text-2xl" />
-						<a class="break-words align-middle text-blue-600 dark:text-blue-300" href={github}>
+						<span class="i-devicon-github text-2xl align-bottom" />
+						<a class="break-words  text-blue-600 dark:text-blue-300" href={github}>
 							{github}</a>
 					</div>
 				</div>
