@@ -63,7 +63,7 @@
 			{/each}
 			<Socials />
 		</nav>
-		<aside class="absolute left-0 top-2 hidden lg:block">
+		<aside class="absolute left-0 top-2 hidden md:block">
 			<ThemeSwitcher />
 			<DarkModeToggle />
 		</aside>
