@@ -17,7 +17,7 @@
 	<div class="mt-8 flex w-full flex-wrap md:w-[60vw] md:justify-center md:gap-8 md:pb-24">
 		{#each Object.entries(projects) as [key, { url, github, hostedOn }]}
 			<article
-				class="dark:bg-primary-900 m-4 mx-auto flex w-[90vw] flex-col rounded rounded-t-xl bg-white dark:text-white md:m-2 md:h-fit md:w-[500px]">
+				class="dark:bg-primary-900 m-4 mx-auto flex w-[90vw] flex-col rounded rounded-t-xl bg-white dark:text-white md:m-2 md:h-fit md:w-[530px]">
 				<div class="relative [&>*]:rounded-t-xl">
 					<h2 class="p-2 text-center text-4xl text-blue-600 dark:text-blue-300">
 						<a class="" href={url}>{key}</a>
