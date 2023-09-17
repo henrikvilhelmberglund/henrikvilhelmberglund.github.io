@@ -19,7 +19,7 @@
 			<article
 				class="dark:bg-primary-900 m-4 mx-auto flex w-[90vw] flex-col rounded rounded-t-xl bg-white dark:text-white md:m-2 md:h-fit md:w-[530px]">
 				<div class="relative [&>*]:rounded-t-xl">
-					<h2 class="p-2 text-center text-4xl text-blue-600 dark:text-blue-300">
+					<h2 class="p-2 text-center break-words md:break-normal text-4xl text-blue-600 dark:text-blue-300">
 						<a class="" href={url}>{key}</a>
 					</h2>
 					<div
