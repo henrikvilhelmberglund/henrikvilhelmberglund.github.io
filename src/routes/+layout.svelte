@@ -51,7 +51,7 @@
 </script>
 
 <main
-	class="bg-gradient-to-b dark:from-primary-950 dark:to-black to-primary-300 from-primary-100 font-quicksand flex min-h-screen w-screen flex-col items-center">
+	class="bg-gradient-to-b pb-24 md:pb-12 dark:from-primary-950 dark:to-black to-primary-300 from-primary-100 font-quicksand flex min-h-screen w-screen flex-col items-center">
 	<header
 		class="dark:bg-primary-900 shadow-primary-200 dark:shadow-primary-800 flex w-full justify-center bg-white shadow-lg">
 		<nav class="relative flex h-14 max-w-full items-center justify-center gap-12">
