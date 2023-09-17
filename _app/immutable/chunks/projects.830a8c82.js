@@ -1,1 +1,0 @@
-const e="Projects",t="Here are some of my projects. They are hosted on various platforms such as Github Pages, Vercel and Cloudflare Pages.",o={title:e,introduction:t};export{o as default,t as introduction,e as title};
