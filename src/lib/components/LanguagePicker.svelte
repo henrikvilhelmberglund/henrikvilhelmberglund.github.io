@@ -19,7 +19,7 @@
 
 <div
 	use:melt={$root}
-	class="flex flex-col mt-2 gap-3 data-[orientation=horizontal]:flex-row"
+	class="mt-2 flex flex-col gap-3 data-[orientation=horizontal]:flex-row"
 	aria-label="View density">
 	{#each optionsArr as option}
 		<div
@@ -28,7 +28,7 @@
 			class:i-openmoji-flag-united-kingdom={option === "en"}
 			class:i-openmoji-flag-sweden={option === "sv"}
 			class:i-openmoji-flag-japan={option === "ja"}
-			class="outline-2 flex h-8 w-12 bg-cover bg-center items-center gap-3 -outline-offset-3">
+			class="-outline-offset-3 flex h-8 w-12 items-center gap-3 bg-cover bg-center outline-2">
 			<button
 				use:melt={$item(option)}
 				on:click={() => {
@@ -40,7 +40,7 @@
 				class="grid h-8 w-12 cursor-default place-items-center rounded-full
       "
 				id={option}
-				aria-labelledby="{option}-label" />
+				aria-label="{option} flag" />
 		</div>
 	{/each}
 </div>
