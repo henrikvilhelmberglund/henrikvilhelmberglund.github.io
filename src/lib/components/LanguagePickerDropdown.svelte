@@ -31,7 +31,7 @@
 						class="grid h-12 w-12 cursor-default place-items-center rounded-full
         shadow-sm"
 						id={option}
-						aria-labelledby="{option}-label" />
+						aria-label="{option} flag" />
 				</div>
 			{/each}
 		</div>

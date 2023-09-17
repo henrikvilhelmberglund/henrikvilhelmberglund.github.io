@@ -26,15 +26,17 @@
 <button class="i-carbon:color-palette !bg-primary-900 mt-3 h-[40px] w-[40px]" use:melt={$trigger} />
 {#if $open}
 	<div class="!left-0" use:melt={$menu} transition:fly={{ duration: 150, y: -10 }}>
-		<div class="bg-primary-300 dark-bg-primary-800 flex flex-col gap-1 p-2 rounded-md rounded-t-none">
+		<div
+			class="bg-primary-300 dark-bg-primary-800 flex flex-col gap-1 rounded-md rounded-t-none p-2">
 			{#each themeColors as themeColor}
 				<button
 					on:click={() => (selectedTheme = themeColor)}
-          class:bg-green-500={themeColor === "green"}
-          class:bg-pink-500={themeColor === "pink"}
-          class:bg-blue-500={themeColor === "blue"}
-          class:bg-[#ff7d32]={themeColor === "svelty"}
-					class="item h-10 w-10 rounded p-2 text-transparent md:p-2" />
+					class:bg-green-500={themeColor === "green"}
+					class:bg-pink-500={themeColor === "pink"}
+					class:bg-blue-500={themeColor === "blue"}
+					class:bg-[#ff7d32]={themeColor === "svelty"}
+					class="item h-10 w-10 rounded p-2 text-transparent md:p-2"
+					aria-label="theme picker" />
 			{/each}
 			<DarkModeToggle />
 		</div>
