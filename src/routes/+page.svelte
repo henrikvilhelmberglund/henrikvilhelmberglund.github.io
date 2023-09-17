@@ -7,6 +7,10 @@
 	// $: if (browser) color = localStorage.color;
 </script>
 
+<svelte:head>
+  <title>{$t("common.SEOtitle")}</title>
+</svelte:head>
+
 <section class="flex flex-col items-center pt-20">
 	<H1>{$t("common.greeting")}</H1>
 	<WhiteTextBox>

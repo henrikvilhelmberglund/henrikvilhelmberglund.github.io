@@ -1,5 +1,6 @@
 {
   "greeting": "Välkommen till Henrik Berglunds portfoliosida!",
   "introduction": "Hej! Jag heter Henrik Berglund och är en Frontendutvecklarstudent på Nackademin. Jag älskar Svelte och UnoCSS/Tailwind. Jag älskar också att skapa tillgängliga wedbbsidor som är enkla att använda och är vettiga.",
-  "purpose": "Målet med den här sidan är att länka till några av mina projekt. Kolla gärna in!"
+  "purpose": "Målet med den här sidan är att länka till några av mina projekt. Kolla gärna in!",
+  "SEOtitle": "Henrik Berglunds portfoliosida"
 }
