@@ -21,7 +21,7 @@
 				class:i-mdi-github={name === "Github"}
 				class:i-mdi-linkedin={name === "LinkedIn"}
 				class:!text-blue-600={name === "LinkedIn"}
-				class="h-12 w-12 text-black dark:text-slate-200" /></a>
+				class="h-12 w-12 text-black dark:text-slate-200"></article></a>
 	{/each}
 </section>
 
