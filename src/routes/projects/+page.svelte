@@ -34,14 +34,14 @@
 	<div class="mt-8 flex w-full flex-wrap md:w-[60vw] md:justify-center md:gap-8 md:pb-24">
 		{#each Object.entries(projects) as [key, { url, github, hostedOn }]}
 			<article
-				class="dark:bg-random-900 m-4 mx-auto flex w-[90vw] flex-col rounded rounded-t-xl bg-white dark:text-white md:m-2 md:h-fit md:w-[530px]">
+				class="dark:bg-random-970 m-4 mx-auto flex w-[90vw] flex-col rounded rounded-t-xl bg-white dark:text-white md:m-2 md:h-fit md:w-[530px]">
 				<div class="relative [&>*]:rounded-t-xl">
 					<h2
 						class="break-words p-2 text-center text-4xl text-random-800 dark:text-random-300 md:break-normal">
 						<a class="" href={url}>{key}</a>
 					</h2>
 					<div
-						class="bg-random-900/15 mask-bg-hero-diagonal-stripes dark:bg-random-100/5 pointer-events-none absolute left-0 top-0 h-full w-full">
+						class="bg-random-200/15 mask-bg-hero-diagonal-stripes dark:bg-random-900/5 pointer-events-none absolute left-0 top-0 h-full w-full">
 					</div>
 				</div>
 				<div class="flex flex-1 flex-col gap-4 p-4">

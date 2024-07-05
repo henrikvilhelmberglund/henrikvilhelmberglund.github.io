@@ -54,7 +54,7 @@
 		const delta = now - lastTime;
 		if (delta > interval) {
 			if (hueValue < 360) {
-				hueValue += 0.5;
+				hueValue += 0.3;
 			} else {
 				hueValue = 0;
 			}
@@ -120,7 +120,7 @@
 	<main
 		style="--hue: {hueValue}"
 		id="layout-div"
-		class="dark:from-random-950 to-random-300 from-random-100 font-quicksand flex min-h-screen w-screen flex-col items-center bg-gradient-to-b pb-24 dark:to-black md:pb-12">
+		class="dark:from-random-950 to-random-300 from-random-100 font-quicksand flex min-h-screen  flex-col items-center bg-gradient-to-b pb-24 dark:to-black md:pb-12">
 		<header
 			class="dark:bg-random-900 shadow-random-200 dark:shadow-random-800 flex w-full justify-center bg-white shadow-lg">
 			<nav class="relative flex h-14 max-w-full items-center justify-center gap-12">
