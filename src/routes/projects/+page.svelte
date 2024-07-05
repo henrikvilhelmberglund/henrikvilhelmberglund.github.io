@@ -3,45 +3,54 @@
 	import WhiteTextBox from "$lib/components/WhiteTextBox.svelte";
 	import DOMPurify from "isomorphic-dompurify";
 	import { marked } from "marked";
-  
-  import * as m from "$lib/paraglide/messages.js";
-	import { languageTag } from "$lib/paraglide/runtime.js";
 
-	export let data;
-	$: projects = data.projects;
+	import * as m from "$lib/paraglide/messages.js";
+	import { languageTag } from "$lib/paraglide/runtime.js";
+	import { syncAnims } from "$lib/utils";
+
+	$effect(() => {
+		syncAnims({
+			animName: "hue-anim",
+			fromElementName: "#projects-section",
+			toElementName: "#layout-div",
+		});
+	});
+	const { data } = $props();
+	const projects = $derived(data.projects);
 </script>
 
 <svelte:head>
 	<title>{m.projects_SEOtitle()}</title>
-  <meta name="description" content={m.projects_SEOdescription()} />
+	<meta name="description" content={m.projects_SEOdescription()} />
 </svelte:head>
 
-<section class="flex w-full flex-col items-center pt-20">
+<section id="projects-section" class="flex w-full flex-col items-center pt-20">
 	<H1>{@html DOMPurify.sanitize(marked.parse(m.projects_title()))}</H1>
 	<WhiteTextBox>
 		<div class="text-lg">
-      {@html DOMPurify.sanitize(marked.parse(m.introduction()))}
-    </div>
+			{@html DOMPurify.sanitize(marked.parse(m.introduction()))}
+		</div>
 	</WhiteTextBox>
 	<div class="mt-8 flex w-full flex-wrap md:w-[60vw] md:justify-center md:gap-8 md:pb-24">
 		{#each Object.entries(projects) as [key, { url, github, hostedOn }]}
 			<article
-				class="dark:bg-primary-900 m-4 mx-auto flex w-[90vw] flex-col rounded rounded-t-xl bg-white dark:text-white md:m-2 md:h-fit md:w-[530px]">
+				class="dark:bg-random-900 m-4 mx-auto flex w-[90vw] flex-col rounded rounded-t-xl bg-white dark:text-white md:m-2 md:h-fit md:w-[530px]">
 				<div class="relative [&>*]:rounded-t-xl">
 					<h2
-						class="break-words p-2 text-center text-4xl text-blue-600 dark:text-blue-300 md:break-normal">
+						class="break-words p-2 text-center text-4xl text-random-800 dark:text-random-300 md:break-normal">
 						<a class="" href={url}>{key}</a>
 					</h2>
 					<div
-						class="bg-primary-900/15 mask-bg-hero-diagonal-stripes dark:bg-primary-100/5 pointer-events-none absolute left-0 top-0 h-full w-full"></div>
+						class="bg-random-900/15 mask-bg-hero-diagonal-stripes dark:bg-random-100/5 pointer-events-none absolute left-0 top-0 h-full w-full">
+					</div>
 				</div>
 				<div class="flex flex-1 flex-col gap-4 p-4">
 					<div class="markdown flex-1 break-words">
-            {#if key}
-            <!-- TODO fix type -->
-            {@const text = m[`${key.replaceAll(".", "_").replaceAll("-", "_")}`]()}
-						{@html DOMPurify.sanitize(marked.parse(text))}
-            {/if}
+						{#if key}
+							<!-- TODO fix type -->
+							{@const text = m[`${key.replaceAll(".", "_").replaceAll("-", "_")}`]()}
+							{@html DOMPurify.sanitize(marked.parse(text))}
+						{/if}
 					</div>
 					<div class="md:mt-6">
 						<span
@@ -50,13 +59,11 @@
 							class:i-devicon-vercel-wordmark={hostedOn === "Vercel"}
 							class:i-devicon-cloudflare-wordmark={hostedOn === "Cloudflare Pages"}
 							class:i-devicon-github-wordmark={hostedOn === "Github Pages"}></span>
-						<a class="break-words text-blue-600 dark:text-blue-300" href={url}>
-							{url}</a>
+						<a class="break-words text-blue-600 dark:text-blue-300" href={url}> {url}</a>
 					</div>
 					<div>
 						<span class="i-devicon-github text-2xl align-bottom"></span>
-						<a class="break-words  text-blue-600 dark:text-blue-300" href={github}>
-							{github}</a>
+						<a class="break-words text-blue-600 dark:text-blue-300" href={github}> {github}</a>
 					</div>
 				</div>
 			</article>

@@ -10,10 +10,10 @@
 </script>
 
 <section
-	class="shadow-primary-200 dark:shadow-primary-800 dark:bg-primary-900 absolute top-14 flex gap-2 self-baseline rounded-b-3xl bg-white p-1 shadow-lg">
+	class="shadow-random-200 dark:shadow-random-800 dark:bg-random-900 absolute top-14 flex gap-2 self-baseline rounded-b-3xl bg-white p-1 shadow-lg">
 	<h2 class="hidden text-center text-2xl">Socials</h2>
 	{#each socials as { link, name, icon }}
-		<a class="hover:dark:bg-primary-950 hover:bg-primary-200 rounded-md" href={link}>
+		<a class="hover:dark:bg-random-950 hover:bg-random-200 rounded-md" href={link}>
 			<article
 				aria-label={name}
 				class:i-mdi-twitter={name === "Twitter"}

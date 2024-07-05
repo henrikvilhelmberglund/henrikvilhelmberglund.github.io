@@ -9,6 +9,7 @@ import presetTheme from "unocss-preset-theme";
 export const reloadMe = true;
 
 export default defineConfig({
+	rules: [],
 	variants: [
 		{
 			match: (matcher) => {
@@ -24,7 +25,7 @@ export default defineConfig({
 	],
 	shortcuts: {
 		"btn-primary":
-			"bg-primary-400 outline-primary-500 outline-2 text-base-100 dark:bg-primary-700 dark:hover:active:(bg-primary-500 translate-y-1) transition-transform hover:active:(bg-primary-100 translate-y-1) dark:hover:bg-primary-600 hover:bg-primary-300 p-2 rounded-lg shadow-md",
+			"bg-random-400 outline-random-500 outline-2 text-base-100 dark:bg-random-700 dark:hover:active:(bg-random-500 translate-y-1) transition-transform hover:active:(bg-random-100 translate-y-1) dark:hover:bg-random-600 hover:bg-random-300 p-2 rounded-lg shadow-md",
 		"btn-secondary":
 			"bg-secondary-400 outline-secondary-500 outline-2 text-base-100 dark:bg-secondary-700 dark:hover:active:(bg-secondary-500 translate-y-1)  transition-transform hover:active:(bg-secondary-100 translate-y-1)  dark:hover:bg-secondary-600 hover:bg-secondary-300 p-2 rounded-lg shadow-md",
 	},
@@ -36,7 +37,34 @@ export default defineConfig({
 		`font-thin font-extralight font-light font-normal font-medium font-semibold font-bold font-extrabold font-black
         btn-primary btn-secondary`,
 	],
-	theme: {},
+	theme: {
+		animation: {
+			// keyframes: {
+			// 	hue: "{0% {var(--hue):0} 50% {var(--hue):360} 100% {var(--hue):0}",
+			// },
+			// durations: {
+			// 	hue: "2s",
+			// },
+			// counts: {
+			// 	hue: "infinite",
+			// },
+		},
+		colors: {
+			random: {
+				50: "color-mix(in srgb, oklch(95% 0.10 var(--hue)) 30%, oklch(100% 0 360))",
+				100: "color-mix(in srgb, oklch(95% 0.10 var(--hue)) 80%, oklch(100% 0 360))",
+				200: "oklch(90% 0.12 var(--hue))",
+				300: "oklch(85% 0.20 var(--hue))",
+				400: "oklch(74% 0.20 var(--hue))",
+				500: "oklch(62% 0.20 var(--hue))",
+				600: "oklch(54% 0.23 var(--hue))",
+				700: "oklch(49% 0.21 var(--hue))",
+				800: "oklch(42% 0.17 var(--hue))",
+				900: "oklch(37% 0.14 var(--hue))",
+				950: "oklch(29% 0.09 var(--hue))",
+			},
+		},
+	},
 	presets: [
 		presetUno({ dark: "class" }),
 		presetForms(),
