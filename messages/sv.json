@@ -2,7 +2,7 @@
     "$schema": "https://inlang.com/schema/inlang-message-format",
 
     "greeting": "Välkommen till Henrik Berglunds portfoliosida!",
-    "introduction": "Hej! Jag heter Henrik Berglund och är en Frontendutvecklarstudent (andra året) på Nackademin. Jag älskar Svelte och UnoCSS/Tailwind. Jag älskar också att skapa tillgängliga webbsidor som är enkla att använda och är vettiga.",
+    "introduction": "Hej! Jag heter Henrik Berglund och är en nyligen utexaminerad Frontendutvecklare från Nackademin. Jag älskar Svelte och UnoCSS/Tailwind och strävar efter att skapa tillgängliga webbsidor som är enkla att använda och tilltalande.",
     "purpose": "Målet med den här sidan är att länka till några av mina projekt. Kolla gärna in!",
     "SEOtitle": "Henrik Berglunds portfoliosida",
     "SEOdescription": "Det här är Henrik Berglunds portfoliosida där du kan hitta hans projekt och länkar till sociala medier.",
