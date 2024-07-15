@@ -2,6 +2,39 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.2.0](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/compare/v1.1.0...v1.2.0) (2024-07-15)
+
+
+### Features
+
+* update utils and components/pages ([8a0fade](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/8a0fadec336fdc8bcba35a517ec0d25ab7eeb886))
+* add new projects and translations ([886016f](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/886016f499d197f25d893867b370ac2169e7a0ca))
+* add scrollbar-fix rule ([b28f881](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/b28f8815e154196b7d29bf272492dab56987ba38))
+* add prettier-plugin-tailwindcss ([a7d1c45](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/a7d1c45b5cd24a2b0ede24d0de1353533b2f703b))
+* add types ([14d6aa7](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/14d6aa7cd37fe2039f9342baef852321fadd4e04))
+* add screenshots to gitignore ([57d3ae0](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/57d3ae093238f89f352d7f6141f25ad11779d34d))
+* add darker hues ([fb1cb20](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/fb1cb20a6d7318332758c08a8f771b25991d3a5c))
+* add hue animation that uses requestAnimationFrame() ([29b9b8d](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/29b9b8dd6681486b0ca5d09de57ef690cdfd63b0))
+* add syncAnims util (not used now but was interesting) ([b1374df](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/b1374dfd721fa72535f7cf4c7b8cc99e7a2bad14))
+* update prettier ([2ba98ec](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/2ba98ec7cd057b7684b49cdb062ad24f8ea1bf50))
+* use inlang and fix hydration issues (from p tag inside p tag) ([2da4244](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/2da4244ea1ee1465ff766e10df9b397086fa6b15))
+* use inlang in layout ([4370f52](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/4370f524c51ba5dea405373e92a4d86416e4eca0))
+* update Socials.svelte ([786ff3c](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/786ff3caf2bb6b86d652135145da6065be75cb4b))
+* use inlang in LanguagePicker ([baa5ee7](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/baa5ee769b31a5762ff422f1c0eee8d4f6231cc2))
+* use inlang ([f3b7e84](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/f3b7e84b68a66aa7951a762db6136b3a1eeb4295))
+* use inlang ([707d29b](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/707d29be6f5770f306dcae0366dc7932c8dd3cc1))
+* use typescript ([9c96b26](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/9c96b2608ea1a84452fb80e2d7124a77cebf90a1))
+* use bun, update packages ([e8b6202](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/e8b6202fe6f2bac292e67b25524dd981946d8d03))
+
+
+### Bug Fixes
+
+* remove unneeded type import ([47f27c5](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/47f27c58953f9e917e28d631fd0553394ef01dbc))
+* remove unused url ([80a2dcc](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/80a2dccffd2d320a880a902247a94302d3458981))
+* use svelte preprocess ([bd64f1a](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/bd64f1a92fdc826985d0cf3669fd66651d51d498))
+* set sv as default language ([d26a58d](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/d26a58deb070447132ce02aac390f5203d86aaf6))
+* remove old stuff ([5d73672](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/5d73672cd7b1ac08449101cda51bcfab0a6bb11b))
+
 ## [1.1.0](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/compare/v1.0.1...v1.1.0) (2023-10-13)
 
 

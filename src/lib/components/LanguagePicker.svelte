@@ -1,46 +1,30 @@
-<script lang="ts">
-	import { createRadioGroup, melt } from "@melt-ui/svelte";
-	import { t, locales } from "$lib/i18n/i18n";
-	import { userPreferredLocale } from "$lib/stores";
-	import { getContext } from "svelte";
-
-	const {
-		elements: { root, item, hiddenInput },
-		helpers: { isChecked },
-	} = createRadioGroup({
-		defaultValue: $userPreferredLocale,
-		orientation: "horizontal",
-	});
-
-	const optionsArr = ["en", "sv", "ja"];
-
-	const locale = getContext("locale");
+<script context="module">
+	import { page } from "$app/stores";
+	import { i18n } from "$lib/i18n";
+  
+	export const languages = ["sv", "en", "jp"];
+  import { languageTag } from '$lib/paraglide/runtime.js'
 </script>
+<!-- TODO make mobile dropdown version -->
 
-<div
-	use:melt={$root}
-	class="mt-2 flex flex-col gap-3 data-[orientation=horizontal]:flex-row"
-	aria-label="View density">
-	{#each optionsArr as option}
-		<div
-			class:outline-orange-500={$isChecked(option)}
-			class:outline-solid={$isChecked(option)}
-			class:i-openmoji-flag-united-kingdom={option === "en"}
-			class:i-openmoji-flag-sweden={option === "sv"}
-			class:i-openmoji-flag-japan={option === "ja"}
-			class="-outline-offset-3 flex h-8 w-12 items-center gap-3 bg-cover bg-center outline-2">
-			<button
-				use:melt={$item(option)}
-				on:click={() => {
-					$userPreferredLocale = option;
-
-					// ? this gives an error but locale is always a store, probably TS issue
-					$locale = option;
-				}}
-				class="grid h-8 w-12 cursor-default place-items-center rounded-full
-      "
-				id={option}
-				aria-label="{option} flag" />
-		</div>
-	{/each}
+<div class="flex flex-row absolute gap-4 h-9 left-[calc(100vw-160px)] top-2">
+	<div class="flex flex-row rounded bg-slate-100">
+		{#each languages as language}
+			<a
+				aria-label="{language === 'sv'
+					? 'Swedish'
+					: language === 'en'
+						? 'English'
+						: language === 'jp'
+							? 'Japanese'
+							: 'unknown'} flag"
+				class:i-twemoji-flag-sweden={language === "sv"}
+				class:i-twemoji-flag-united-kingdom={language === "en"}
+				class:i-twemoji-flag-japan={language === "jp"}
+				class:!bg-blue-200={language === languageTag()}
+				class="right-2 rounded-md px-6 text-4xl"
+				hreflang={language}
+				href={i18n.route($page.url.pathname)}></a>
+		{/each}
+	</div>
 </div>
