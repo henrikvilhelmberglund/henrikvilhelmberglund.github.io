@@ -12,7 +12,8 @@
     "format": "prettier --plugin-search-dir . --write .",
     "release": "commit-and-tag-version",
     "postrelease": "git push --follow-tags origin main",
-    "deploy": "npx gh-pages -d build --dotfiles"
+    "deploy": "npx gh-pages -d build --dotfiles",
+    "test": "bun test"
   },
   "devDependencies": {
     "@iconify-json/carbon": "^1.1.21",
@@ -30,6 +31,7 @@
     "@sveltejs/adapter-static": "^3.0.2",
     "@sveltejs/kit": "^2.5.17",
     "@sveltejs/vite-plugin-svelte": "^3.1.1",
+    "@types/bun": "^1.1.6",
     "@unocss/svelte-scoped": "^0.61.0",
     "commit-and-tag-version": "^11.2.3",
     "isomorphic-dompurify": "^1.8.0",
