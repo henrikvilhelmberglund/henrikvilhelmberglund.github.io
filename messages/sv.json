@@ -1,23 +1,24 @@
 {
     "$schema": "https://inlang.com/schema/inlang-message-format",
-
     "greeting": "Välkommen till Henrik Berglunds portfoliosida!",
     "introduction": "Hej! Jag heter Henrik Berglund och är en nyligen utexaminerad Frontendutvecklare från Nackademin. Jag älskar Svelte och UnoCSS/Tailwind och strävar efter att skapa tillgängliga webbsidor som är enkla att använda och tilltalande.",
     "purpose": "Målet med den här sidan är att länka till några av mina projekt. Kolla gärna in!",
     "SEOtitle": "Henrik Berglunds portfoliosida",
     "SEOdescription": "Det här är Henrik Berglunds portfoliosida där du kan hitta hans projekt och länkar till sociala medier.",
-
-    "home": "Hem", "projects": "Projekt", "cta": "Gå till projekt",
-
-    "projects_introduction": "Här är några av mina projekt. De är hostade på olika plattformar som **Github Pages**, **Vercel** och **Cloudflare Pages**.",
+    "home": "Hem",
+    "projects": "Projekt",
+    "cta": "Gå till projekt",
     "projects_title": "Projekt",
     "projects_SEOtitle": "Henrik Berglunds projekt",
     "projects_SEOdescription": "Det här är Henrik Berglund's projekt som är hostade på diverse plattformar.",
+    "projects_introduction": "Här är några av mina projekt. De är hostade på olika plattformar som **Github Pages**, **Vercel** och **Cloudflare Pages**.",
     "keyboard": "**Keyboard** är ett enkelt virtuellt instrument som du kan spela med ditt tangentbord, mus eller mobil. Det använder [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") för ljudsamples.",
     "branschdag_2023_03": "**Branschdag-23-03** är en app som jag gjort för att göra det enklare att hitta företagen på Nackademins branschdag-evenemang. Du kan klicka på klassrummen för att se vilka företag som finns där, filtrera efter ditt ämne för att bara se företag som är intressanta för dig och klicka på företagens namn för att se deras information.",
     "branschdag_2023_10": "**Branschdag-23-10** är en uppdaterad version av Branschdag-23-03. \nDen viktigaste nya funktionen är att istället för att kopiera och klistra in data skrev jag ett scraper-skript som använder Puppeteer för att hämta data från eventwebbplatsen och exportera data till .js-filer vilket gör uppdatering/kontroll av datat mycket enklare.",
-    "henrikvilhelmberglund_github_io": "**henrikvilhelmberglund.github.io** är min portfoliowebbsida och sidan du läser just nu. Jag använder en anpassad domän så webbadressen är något annorlunda. På den här sidan listar jag några av mina projekt och länkar till mina sociala medier. Det här projektet var den första gången jag använde \"riktig\" i18n med [sveltekit-i18n](https://github.com/sveltekit-i18n/lib) och VSCode-extensionen [i18n-ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally).",
     "Grafikverktyg2022": "**Grafikverktyg2022** är en app jag gjort för att skapa färgpaletter som sedan enkelt kan importeras inne i Figma. Den låter dig också skicka färgerna till [uicolors.app](https://uicolors.app/).",
     "Tutorials": "**Tutorials** är en blogg där jag lägger upp saker som jag vill referera till senare. Den innehåller inlägg där jag lärde mig Svelte från en Svelte-kurs gjord av Li Hau Tan som fanns på freecodecamp youtube-kanalen samt workflowförbättringar för VSCode.",
-    "learned": "**Learned** är en sida som jag skapade för att visa vad jag lärde mig (eller kom ihåg) en viss dag. \nJag använder Obsidian för att lagra små godbitar av information som jag sedan importerar med Vite och visar med mdsvex i ett SvelteKit-projekt."
+    "henrikvilhelmberglund_github_io": "**henrikvilhelmberglund.github.io** är min portfoliowebbsida och sidan du läser just nu. Jag använder en anpassad domän så webbadressen är något annorlunda. På den här sidan listar jag några av mina projekt och länkar till mina sociala medier. Det här projektet var den första gången jag använde \"riktig\" i18n med [sveltekit-i18n](https://github.com/sveltekit-i18n/lib) och VSCode-extensionen [i18n-ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally).",
+    "learned": "**Learned** är en sida som jag skapade för att visa vad jag lärde mig (eller kom ihåg) en viss dag. \nJag använder Obsidian för att lagra små godbitar av information som jag sedan importerar med Vite och visar med mdsvex i ett SvelteKit-projekt.",
+    "nejime": "**Nejime** är en musiktracker för att skapa musik i en browser inspirerad av LSDj. Man kan sedan få en länk till sin sång som man kan dela med andra.",
+    "branschdag_2024_03": "**Branschdag-24-03** är en uppdaterad version av Branschdag-23-10 där jag uppdaterade datat och lade till tester."
 }

@@ -1,4 +1,10 @@
 {
+	"nejime": {
+		"displayName": "Nejime",
+		"url": "https://nejime.henrikvilhelmberglund.com/",
+		"github": "https://github.com/henrikvilhelmberglund/nejime",
+		"hostedOn": "Cloudflare Pages"
+	},
 	"keyboard": {
 		"displayName": "Keyboard",
 		"url": "https://keyboard.henrikvilhelmberglund.com/",
@@ -21,6 +27,12 @@
 		"displayName": "Branschdag-2023-10",
 		"url": "https://henrikvilhelmberglund.com/branschdag-2023-10/",
 		"github": "https://github.com/henrikvilhelmberglund/branschdag-2023-10",
+		"hostedOn": "Github Pages"
+	},
+  "branschdag-2024-03": {
+		"displayName": "Branschdag-2024-03",
+		"url": "https://henrikvilhelmberglund.com/branschdag-2024-03/",
+		"github": "https://github.com/henrikvilhelmberglund/branschdag-2024-03",
 		"hostedOn": "Github Pages"
 	},
 	"Grafikverktyg2022": {

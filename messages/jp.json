@@ -1,23 +1,24 @@
 {
     "$schema": "https://inlang.com/schema/inlang-message-format",
-
     "greeting": "ベルグルンド・ヘンリックのポートフォリオサイトへようこそ！",
     "introduction": "初めまして！ベルグルンド・ヘンリックと申します。スウェーデンのNackademinでフロントエンド開発の学位を取得したばかりです。SvelteとUnoCSS・Tailwindが大好きで、アクセシビリティが良く、使いやすい且つ使い勝手が良いサイトを作ることに励んでいます。",
     "purpose": "このサイトの目的は僕自身が作ったサイトをリンクしてアピールすることです。是非ご覧ください！",
     "SEOtitle": "ベルグルンド・ヘンリックのポートフォリオサイト",
     "SEOdescription": "これはベルグルンド・ヘンリックのポートフォリオページで、彼のプロジェクトとSNSリンクを見ることができます。",
-
-    "home": "ホーム", "projects": "プロジェクト", "cta": "プロジェクトへ",
-
-    "projects_introduction": "ここにプロジェクトのいくつかを紹介します。これらは、**Github Pages**、**Vercel**、**Cloudflare Pages** などのさまざまなプラットフォームでホストされています。",
+    "home": "ホーム",
+    "projects": "プロジェクト",
+    "cta": "プロジェクトへ",
     "projects_title": "プロジェクト",
     "projects_SEOtitle": "ベルグルンド・ヘンリックのプロジェクト",
     "projects_SEOdescription": "このページでは、ベルグルンド・ヘンリックのプロジェクトを見ることができます.",
+    "projects_introduction": "ここにプロジェクトのいくつかを紹介します。これらは、**Github Pages**、**Vercel**、**Cloudflare Pages** などのさまざまなプラットフォームでホストされています。",
     "keyboard": "**キーボード**は、キーボード、マウス、またはモバイルを使用して演奏するためのシンプルな仮想楽器です。オーディオサンプルには [smplr](https://github.com/danigb/smplr \"smplr is a collection of sampled instruments for Web Audio API ready to be used with no setup required.\") を使用しています。",
     "branschdag_2023_03": "**Branschdag-23-03**は、Nackademin の「branschdag」イベントで企業を簡単に見つけるために私が作成したアプリです。教室をクリックするとそこにいる企業を確認したり、学問でフィルターして興味のある企業のみを表示したり、企業名をクリックして情報を確認したりできます。",
     "branschdag_2023_10": "**Branschdag-23-10** は、Branschdag-23-03の更新バージョンです。\n主な新機能は、データをコピー＆ペーストする代わりに、Puppeteerを使用してイベントWebサイトからデータを取得し、そのデータを.jsファイルに出力するスクレイパースクリプトを作成したことです。これにより、データの更新と確認がはるかに簡単になりました。",
-    "henrikvilhelmberglund_github_io": "**henrikvilhelmberglund.github.io** は私のポートフォリオサイトであり、今あなた読んで下さっているサイトです。カスタムドメインを使用しているため、URL が少し上記とは異なります。このサイトでは、私のプロジェクトのいくつかをリストし、SNSへのリンクを掲載しています。このプロジェクトでは初めて本当の「i18n」に触れ、[sveltekit-i18n](https://github.com/sveltekit-i18n/lib) と VSCode 拡張機能 [i18n-ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)を使用しました。",
     "Grafikverktyg2022": "**Grafikverktyg2022** は、Figma に簡単にインポートできるカラーパレットを作成するために作成したアプリです。また、[uicolors.app](https://uicolors.app/) に色を送信することもできます。",
     "Tutorials": "**Tutorials** は、後で参照したいものを投稿するためのブログです。これには、FreecodecampのYouTubeチャンネルにあったLi Hau Tan氏によるSvelteコースからSvelteを学んだ投稿や、VSCodeのワークフローの改善投稿などが含まれています。",
-    "learned": "**Learned** は、私が特定の日に学んだこと(または思い出したこと)を表示するために作成したサイトです。\nObsidian を使用して保存した情報をSvelteKitプロジェクトでViteを使用してインポートしてからmdsvexでレンダーします。"
+    "henrikvilhelmberglund_github_io": "**henrikvilhelmberglund.github.io** は私のポートフォリオサイトであり、今あなた読んで下さっているサイトです。カスタムドメインを使用しているため、URL が少し上記とは異なります。このサイトでは、私のプロジェクトのいくつかをリストし、SNSへのリンクを掲載しています。このプロジェクトでは初めて本当の「i18n」に触れ、[sveltekit-i18n](https://github.com/sveltekit-i18n/lib) と VSCode 拡張機能 [i18n-ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally)を使用しました。",
+    "learned": "**Learned** は、私が特定の日に学んだこと(または思い出したこと)を表示するために作成したサイトです。\nObsidian を使用して保存した情報をSvelteKitプロジェクトでViteを使用してインポートしてからmdsvexでレンダーします。",
+    "nejime": "**Nejime**はLSDjにインスパイアされたブラウザで音楽を作成するためのミュージックトラッカーです。自分の曲へのリンクを取得して他人に共有することができます。",
+    "branschdag_2024_03": "**Branschdag-24-03**はBranschdag-23-10の更新版で、データを更新し、テストを追加しました。"
 }

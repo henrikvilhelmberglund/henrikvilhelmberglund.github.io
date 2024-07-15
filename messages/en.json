@@ -1,16 +1,13 @@
 {
 	"$schema": "https://inlang.com/schema/inlang-message-format",
-
 	"greeting": "Welcome to Henrik Berglund's portfolio page!",
 	"introduction": "Hi! I'm Henrik Berglund, a recently graduated Frontend Developer from Nackademin. I love Svelte and UnoCSS/Tailwind and strive to create accessible websites that are easy to use and appealing.",
 	"purpose": "The purpose of this site is to link to some of my projects. Feel free to check them out!",
 	"SEOtitle": "Henrik Berglund's portfolio page",
 	"SEOdescription": "This is Henrik Berglund's portfolio page where you can find his projects and social media links.",
-
 	"home": "Home",
 	"projects": "Projects",
 	"cta": "Go to projects",
-
 	"projects_title": "Projects",
 	"projects_SEOtitle": "Henrik Berglund's projects",
 	"projects_SEOdescription": "This is Henrik Berglund's projects that are hosted on various platforms.",
@@ -21,5 +18,7 @@
 	"Grafikverktyg2022": "**Grafikverktyg2022** is an app I made to create color palettes that could then easily be imported into Figma. It also allows you to send the colors to [uicolors.app](https://uicolors.app/).",
 	"Tutorials": "**Tutorials** is a blog where I post things that I want to reference later. It includes posts where I learned Svelte from a Svelte course made by Li Hau Tan that was on the freecodecamp youtube channel as well as workflow improvements for VSCode.",
 	"henrikvilhelmberglund_github_io": "**henrikvilhelmberglund.github.io** is my portfolio site and the site you are reading right now. I'm using a custom domain so the URL is slightly different. On this site I list some of my projects and link to my socials. This project was my first time using \"real\" i18n using [sveltekit-i18n](https://github.com/sveltekit-i18n/lib) and the VSCode extension [i18n-ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally). ",
-	"learned": "**Learned** is a site I made to display what I learned (or remembered) a particular day. I use Obsidian to store small tidbits of information which I then import using Vite and display using mdsvex in a SvelteKit project."
+	"learned": "**Learned** is a site I made to display what I learned (or remembered) a particular day. I use Obsidian to store small tidbits of information which I then import using Vite and display using mdsvex in a SvelteKit project.",
+	"nejime": "**Nejime** is a music tracker for creating music in a browser inspired by LSDj. You can then get a link to your song that you can share with others.",
+	"branschdag_2024_03": "**Branschdag-24-03** is an updated version of Branschdag-23-10 where I updated the data and added tests."
 }
