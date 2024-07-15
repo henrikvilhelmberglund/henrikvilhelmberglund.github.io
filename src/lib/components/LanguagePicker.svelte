@@ -7,7 +7,7 @@
 </script>
 <!-- TODO make mobile dropdown version -->
 
-<div class="absolute right-0 flex flex-row justify-center self-center gap-4 h-9 lg:right-2 lg:top-2">
+<div class="flex flex-row absolute gap-4 h-9 left-[calc(100vw-160px)] top-2">
 	<div class="flex flex-row rounded bg-slate-100">
 		{#each languages as language}
 			<a

@@ -4,23 +4,7 @@
 
 	import * as m from "$lib/paraglide/messages.js";
 	import { languageTag } from "$lib/paraglide/runtime.js";
-	import { syncAnims } from "$lib/utils";
 
-	// let color = "blue";
-  
-  // used previously when using CSS animations
-	// let page: Element;
-	// $effect(() => {
-	// 	// not yet mounted
-	// 	if (!page) return;
-	// 	queueMicrotask(() => {
-	// 		syncAnims({
-	// 			animName: "hue-anim",
-	// 			fromElementName: "#page-section",
-	// 			toElementName: "#layout-div",
-	// 		});
-	// 	});
-	// });
 </script>
 
 <svelte:head>
@@ -28,7 +12,7 @@
 	<meta name="description" content={m.SEOdescription()} />
 </svelte:head>
 
-<section bind:this={page} id="page-section" class="flex flex-col items-center pt-20">
+<section id="page-section" class="flex flex-col items-center pt-20">
 	<H1>{m.greeting()}</H1>
 	<WhiteTextBox>
 		<p class="text-lg">{m.introduction()}</p>

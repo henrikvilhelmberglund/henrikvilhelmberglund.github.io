@@ -1,3 +1,17 @@
+// not used now but interesting way to sync animations
+	// let page: Element;
+	// $effect(() => {
+	// 	// not yet mounted
+	// 	if (!page) return;
+	// 	queueMicrotask(() => {
+	// 		syncAnims({
+	// 			animName: "hue-anim",
+	// 			fromElementName: "#page-section",
+	// 			toElementName: "#layout-div",
+	// 		});
+	// 	});
+	// });
+
 type SyncAnimsType = {
 	fromElementName: string;
 	toElementName: string;

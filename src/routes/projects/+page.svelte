@@ -48,8 +48,12 @@
 					<div class="markdown flex-1 break-words">
 						{#if key}
 							<!-- TODO fix type -->
-							{@const text = m[`${key.replaceAll(".", "_").replaceAll("-", "_")}`]()}
+							{@const text = m[`${key.replaceAll(".", "_").replaceAll("-", "_")}`]?.()}
+              {#if text}                
 							{@html DOMPurify.sanitize(marked.parse(text))}
+              {:else}
+              <p>{key} missing</p>
+              {/if}
 						{/if}
 					</div>
 					<div class="md:mt-6">
