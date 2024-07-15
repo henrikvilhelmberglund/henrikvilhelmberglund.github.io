@@ -1,0 +1,1 @@
+import{j as s,a as n,t as d,c as e}from"./disclose-version.BB5VadN9.js";import{d as i}from"./cta.CJxnfSEH.js";var v=d('<h1 class="uno-5n59yb"><!></h1>');function p(o,t){var a=v(),r=e(a);s(r,i(t),{}),n(o,a)}var l=d('<div class="uno-q3zbfg"><!></div>');function h(o,t){var a=l(),r=e(a);s(r,i(t),{}),n(o,a)}export{p as H,h as W};
