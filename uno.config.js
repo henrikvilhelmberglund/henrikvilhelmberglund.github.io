@@ -9,9 +9,7 @@ import presetTheme from "unocss-preset-theme";
 export const reloadMe = true;
 
 export default defineConfig({
-  rules: [
-    [/^scrollbar-fix$/, ([,]) => ({ "padding-left": "calc(100vw - 100%)" })],
-  ],
+	rules: [[/^scrollbar-fix$/, ([,]) => ({ "padding-left": "calc(100vw - 100%)" })]],
 	variants: [],
 	shortcuts: {
 		"btn-primary":
