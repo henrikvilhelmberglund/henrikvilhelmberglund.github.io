@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import H1 from "$lib/components/H1.svelte";
 	import WhiteTextBox from "$lib/components/WhiteTextBox.svelte";
 	import DOMPurify from "isomorphic-dompurify";
@@ -17,6 +17,8 @@
 	});
 	const { data } = $props();
 	const projects = $derived(data.projects);
+
+  type Message = Record<string, Function>;
 </script>
 
 <svelte:head>
@@ -47,8 +49,7 @@
 				<div class="flex flex-1 flex-col gap-4 p-4">
 					<div class="markdown flex-1 break-words">
 						{#if key}
-							<!-- TODO fix type -->
-							{@const text = m[`${key.replaceAll(".", "_").replaceAll("-", "_")}`]?.()}
+							{@const text = (m as Message)[`${key.replaceAll(".", "_").replaceAll("-", "_")}`]?.()}
               {#if text}                
 							{@html DOMPurify.sanitize(marked.parse(text))}
               {:else}
