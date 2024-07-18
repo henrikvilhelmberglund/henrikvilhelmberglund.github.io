@@ -28,7 +28,7 @@
 	<H1>{@html DOMPurify.sanitize(marked.parse(m.projects_title()))}</H1>
 	<WhiteTextBox>
 		<div class="text-lg">
-			{@html DOMPurify.sanitize(marked.parse(m.introduction()))}
+			{@html DOMPurify.sanitize(marked.parse(m.projects_introduction()))}
 		</div>
 	</WhiteTextBox>
 	<div class="mt-8 flex w-full flex-wrap md:w-[60vw] md:justify-center md:gap-8 md:pb-24">

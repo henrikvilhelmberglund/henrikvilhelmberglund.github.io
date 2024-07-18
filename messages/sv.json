@@ -7,7 +7,7 @@
     "SEOdescription": "Det här är Henrik Berglunds portfoliosida där du kan hitta hans projekt och länkar till sociala medier.",
     "home": "Hem",
     "projects": "Projekt",
-    "cta": "Gå till projekt",
+    "cta": "Projekt",
     "projects_title": "Projekt",
     "projects_SEOtitle": "Henrik Berglunds projekt",
     "projects_SEOdescription": "Det här är Henrik Berglund's projekt som är hostade på diverse plattformar.",
@@ -17,7 +17,7 @@
     "branschdag_2023_10": "**Branschdag-23-10** är en uppdaterad version av Branschdag-23-03. \nDen viktigaste nya funktionen är att istället för att kopiera och klistra in data skrev jag ett scraper-skript som använder Puppeteer för att hämta data från eventwebbplatsen och exportera data till .js-filer vilket gör uppdatering/kontroll av datat mycket enklare.",
     "Grafikverktyg2022": "**Grafikverktyg2022** är en app jag gjort för att skapa färgpaletter som sedan enkelt kan importeras inne i Figma. Den låter dig också skicka färgerna till [uicolors.app](https://uicolors.app/).",
     "Tutorials": "**Tutorials** är en blogg där jag lägger upp saker som jag vill referera till senare. Den innehåller inlägg där jag lärde mig Svelte från en Svelte-kurs gjord av Li Hau Tan som fanns på freecodecamp youtube-kanalen samt workflowförbättringar för VSCode.",
-    "henrikvilhelmberglund_github_io": "**henrikvilhelmberglund.github.io** är min portfoliowebbsida och sidan du läser just nu. Jag använder en anpassad domän så webbadressen är något annorlunda. På den här sidan listar jag några av mina projekt och länkar till mina sociala medier. Det här projektet var den första gången jag använde \"riktig\" i18n med [sveltekit-i18n](https://github.com/sveltekit-i18n/lib) och VSCode-extensionen [i18n-ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally).",
+    "henrikvilhelmberglund_github_io": "**henrikvilhelmberglund.github.io** är min portfoliowebbsida och sidan du läser just nu. Jag använder en anpassad domän så webbadressen är något annorlunda. På den här sidan listar jag några av mina projekt och länkar till mina sociala medier. Det här projektet var den första gången jag använde \"riktig\" i18n med [sveltekit-i18n](https://github.com/sveltekit-i18n/lib) och VSCode-extensionen [i18n-ally](https://marketplace.visualstudio.com/items?itemName=lokalise.i18n-ally). Nu använder jag istället [Inlang's ParaglideJS](https://inlang.com/m/gerre34r/library-inlang-paraglideJs).",
     "learned": "**Learned** är en sida som jag skapade för att visa vad jag lärde mig (eller kom ihåg) en viss dag. \nJag använder Obsidian för att lagra små godbitar av information som jag sedan importerar med Vite och visar med mdsvex i ett SvelteKit-projekt.",
     "nejime": "**Nejime** är en musiktracker för att skapa musik i en browser inspirerad av LSDj. Man kan sedan få en länk till sin sång som man kan dela med andra.",
     "branschdag_2024_03": "**Branschdag-24-03** är en uppdaterad version av Branschdag-23-10 där jag uppdaterade datat och lade till tester."
