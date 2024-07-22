@@ -1,0 +1,1 @@
+import{c as o,d as h,l as i}from"./runtime.Dxd9X7SM.js";import{h as m,q as e,d as s,u as d,v as c}from"./disclose-version.Dv-B70xr.js";function b(f,n,u,v){var r="",t;o(()=>{r!==(r=n())&&(t&&(i(t),t=null),r!==""&&(t=h(()=>{if(m){e(d(),s[s.length-1]);return}var l=r+"",a=c(l);e(a.firstChild,a.lastChild),f.before(a)})))})}export{b as h};

@@ -1,0 +1,1 @@
+import{B as c,C as h,z as k,q,u as x}from"./runtime.Dxd9X7SM.js";function u(r,i){var t;var f=r&&((t=r[x])==null?void 0:t.t);return r===i||f===i}function S(r={},i,f,t){c(()=>{var a,s;return h(()=>{a=s,s=[],k(()=>{r!==f(...s)&&(i(r,...s),a&&u(f(...a),r)&&i(null,...a))})}),()=>{q(()=>{s&&u(f(...s),r)&&i(null,...s)})}})}export{S as b};
