@@ -2,6 +2,29 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.3.0](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/compare/v1.1.0...v1.3.0) (2024-07-22)
+
+
+### Features
+
+* add SVG filter stuff           this should probably not be here, but for now it's fine ([a23d340](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/a23d340ec801986c6d2acd27799472355bf227e2))
+* add if for bug repro ([5d86c70](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/5d86c70d117ee4d4407e6977e2e9ed9105d84a0f))
+* update prettier and packages ([36e2425](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/36e2425008265bf55c76a3c30aefb9b9abf23e12))
+* use new vite-plugin-svelte to use inspector in svelte 5 ([aa9ec38](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/aa9ec381c8167a3030fd8c7e11277f5fbf1fac86))
+* update Svelte since bug was fixed ([9798206](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/979820656b552a385e704708f6efe0411c8a14ec))
+* taze ([d8218e3](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/d8218e3b46e0db1b86d65b1b05ce96b743427c11))
+* svelte 5 update ([#1](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/issues/1)) ([b5d245d](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/b5d245dddd7075f548bd021c5d8baffcd63afabe))
+
+
+### Bug Fixes
+
+* fix mobile styling ([4da810e](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/4da810ed0632f0e205746aabe4c4c5a38c027aec))
+* remove old hack ([d0347d7](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/d0347d7016e9490703752c44a7cf3fe56a525aa1))
+* fix type ([4c50cb7](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/4c50cb7b50cbed4487842926f67ac5442088981b))
+* remove extra import ([22f7518](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/22f751853e2991d30050f4877924046729093c88))
+* update translations, use correct message ([ec32edc](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/ec32edc15cc0cd7d3f8850bf9c98fddcc1e7017b))
+* downgrade svelte version because of bug ([9af04a5](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/9af04a575154e91f189bd11b56d474472f42a49e))
+
 ## [1.2.0](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/compare/v1.1.0...v1.2.0) (2024-07-15)
 
 
