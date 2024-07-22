@@ -6,8 +6,6 @@ import { createSafeList } from "./safelist.js";
 import { themes } from "./src/lib/components/theme/theme.js";
 import presetTheme from "unocss-preset-theme";
 
-export const reloadMe = true;
-
 export default defineConfig({
 	rules: [[/^scrollbar-fix$/, ([,]) => ({ "padding-left": "calc(100vw - 100%)" })]],
 	variants: [],
