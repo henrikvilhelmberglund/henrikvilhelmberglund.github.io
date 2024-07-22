@@ -3,7 +3,7 @@
 	import { i18n } from "$lib/i18n";
 	import { page } from "$app/stores";
 	import LanguagePicker from "$lib/components/LanguagePicker.svelte";
-	import ThemeDropdown from "$lib/components/theme/ThemeDropdown.svelte";
+	// import ThemeDropdown from "$lib/components/theme/ThemeDropdown.svelte";
 	import DarkModeToggle from "$lib/components/theme/DarkModeToggle.svelte";
 	import ThemeSwitcher from "$lib/components/theme/ThemeSwitcher.svelte";
 	import Socials from "$lib/components/Socials.svelte";
@@ -71,6 +71,10 @@
 </script>
 
 <ParaglideJS {i18n}>
+  {#if currentPage.id.includes('/svg/')}
+  {@render children()}
+  {:else}
+
 	<main
   style="--hue: {hueValue};"
 		id="layout-div"
@@ -96,6 +100,7 @@
 	</main>
 
 	<Footer />
+  {/if}
 </ParaglideJS>
 
 <style>
