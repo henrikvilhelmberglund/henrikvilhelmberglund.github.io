@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [1.4.0](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/compare/v1.3.0...v1.4.0) (2026-04-29)
+
+
+### Features
+
+* wuchale, update stuff, new hue anim ([a57c57d](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/a57c57d9b85e2307369e7f15c4cbe5a4c76af1a8))
+* update packages ([e517bee](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/commit/e517bee0383278f10954cc42460b47f1522a5db4))
+
 ## [1.3.0](https://github.com/henrikvilhelmberglund/henrikvilhelmberglund.github.io/compare/v1.1.0...v1.3.0) (2024-07-22)
 
 
