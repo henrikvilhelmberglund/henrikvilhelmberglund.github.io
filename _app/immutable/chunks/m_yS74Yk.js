@@ -1,0 +1,1 @@
+import{$ as e,L as t,S as n,g as r,w as i}from"./lrzh8aLF.js";import"./CP97kCR3.js";import"./CPX8Dxjf.js";var a=i(`<h1 class="uno-4l1tr9"><!></h1>`);function o(i,o){var s=a();r(t(s),o,`default`,{},null),e(s),n(i,s)}var s=i(`<div class="uno-7abdi8"><!></div>`);function c(i,a){var o=s();r(t(o),a,`default`,{},null),e(o),n(i,o)}export{o as n,c as t};

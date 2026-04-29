@@ -1,0 +1,1 @@
+import{n as e,r as t,t as n}from"./DUWW4WVn.js";var r=[[`/`],[`/projects`]],i=e=>t(e.pathname,n)[1]??`sv`,a=e(r,n);export{a as n,i as t};

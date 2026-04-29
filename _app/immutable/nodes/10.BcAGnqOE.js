@@ -1,0 +1,1 @@
+import{S as e,w as t}from"../chunks/lrzh8aLF.js";import"../chunks/CP97kCR3.js";import"../chunks/CPX8Dxjf.js";var n=t(`<nav><a href="#" class="svelte-8slh52">hover me</a></nav>`);function r(t){e(t,n())}export{r as component};

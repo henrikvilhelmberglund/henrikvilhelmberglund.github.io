@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 	<head>
 		<meta charset="utf-8" />
 		<!-- <link rel="icon" href="./favicon.png" />
@@ -13,6 +13,22 @@
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 		<link rel="stylesheet" href="./prism-vsc-dark-plus.css" />
+		<style>
+			@property --hue {
+				syntax: "<number>";
+				inherits: true;
+				initial-value: 0;
+			}
+			@keyframes hue-cycle {
+				to { --hue: 360; }
+			}
+			:root {
+				animation: hue-cycle 60s infinite linear;
+			}
+			@media (prefers-reduced-motion: reduce) {
+				:root { animation: none; }
+			}
+		</style>
 		<link
 			rel="preload"
 			as="font"
@@ -35,56 +51,49 @@
 			} else {
 				document.documentElement.classList.add(localStorage.color);
 			}
+			// resume hue animation from the current wall-clock phase so the value
+			// persists across reloads, language switches, and tabs
+			document.documentElement.style.animationDelay = `-${(Date.now() / 1000) % 60}s`;
 		</script>
-		<link href="/_app/immutable/assets/unocss-svelte-scoped-global.DBC_ySp3.css" rel="stylesheet" /> 
-    
-		<link href="./_app/immutable/assets/0.Cw6-Va42.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/2.BARH9kiV.css" rel="stylesheet">
-		<link href="./_app/immutable/assets/WhiteTextBox.BHGnLoVj.css" rel="stylesheet">
-		<link rel="modulepreload" href="./_app/immutable/entry/start.DmZdZj3G.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/entry.ZDur7Ckg.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/runtime.Dxd9X7SM.js">
-		<link rel="modulepreload" href="./_app/immutable/entry/app.EgZTqsB5.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/i18n.Cc2HITiG.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/disclose-version.Dv-B70xr.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/stores.DHcme6AC.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/runtime.DhlVoqcY.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/render.PNux1ae9.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/proxy.CEh2DQVb.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/if.DVrA_e_a.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/this.yAm5qJJ-.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/0.B1Z2TEz6.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/each.D8cXiv3V.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/attributes.Bgl5bfIy.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/messages.Clz6nH67.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/cta.OWL7Lqxd.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/store.C8WYTnBJ.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/index.BrkCjSsj.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/lifecycle.CsaqBas3.js">
-		<link rel="modulepreload" href="./_app/immutable/nodes/2.Cyv4n3vN.js">
-		<link rel="modulepreload" href="./_app/immutable/chunks/WhiteTextBox.dWnSqxDG.js"><!--[--><!--[--><!--[--><!--[--><!--[--><link rel="alternate" hreflang="en" href="http://sveltekit-prerender/en/"><!--]--><!--[--><link rel="alternate" hreflang="sv" href="http://sveltekit-prerender/"><!--]--><!--[--><link rel="alternate" hreflang="jp" href="http://sveltekit-prerender/jp/"><!--]--><!--]--><!--]--><!--]--><!--]--><!--[--><meta name="description" content="This is Henrik Berglund's portfolio page where you can find his projects and social media links."><!--]--><title>Henrik Berglund's portfolio page</title>
+		<link href="/_app/immutable/assets/unocss-svelte-scoped-global.BEkCOWrR.css" rel="stylesheet" /> 
+    <link href="./_app/immutable/entry/start.C6s3ElLr.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/BX1Dajro.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/lrzh8aLF.js" rel="modulepreload">
+		<link href="./_app/immutable/entry/app.uHxBDUN6.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CbUDssf9.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/DUWW4WVn.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CP97kCR3.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/Bz36MFC1.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/0.DlSeUDCD.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CvvP8c5R.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/CPX8Dxjf.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/aQS2c0WQ.js" rel="modulepreload">
+		<link href="./_app/immutable/nodes/2.DzDaGK3b.js" rel="modulepreload">
+		<link href="./_app/immutable/chunks/m_yS74Yk.js" rel="modulepreload">
+		<!--1uha8ag--><meta name="description" content="This is Henrik Berglund's portfolio page where you can find his projects and social media links."/><!----><title>Henrik Berglund's portfolio page</title>
+		<link href="./_app/immutable/assets/0.CcUaB1aD.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/WhiteTextBox.CtMun5G6.css" rel="stylesheet">
+		<link href="./_app/immutable/assets/2.CcxH7qvj.css" rel="stylesheet">
 	</head>
 
 	<body data-sveltekit-preload-data="hover">
-		<div style="display: contents"><!--[--><!--[--><!--[--><!--[--><!--[--><!--[--><main style="--hue: 0;" id="layout-div" class="uno-2cv2d8"><header class="uno-kszqk8"><nav class="uno-829jt1"><!--[--><!--[--><a class="uno-4usi5x uno-fekx0u" href="/en/">Home</a><!--]--><!--[--><a class="uno-4usi5x " href="/en/projects">Projects</a><!--]--><!--]--> <!--[--><section class="uno-0w19v3"><h2 class="uno-w45f3i">Socials</h2> <!--[--><!--[--><a class="uno-kw8rdr group" href="https://github.com/henrikvilhelmberglund"><article aria-label="Github" class="uno-eozo6d uno-wzlk7c"></article></a><!--]--><!--[--><a class="uno-kw8rdr group" href="https://www.linkedin.com/in/henrikvilhelmberglund/"><article aria-label="LinkedIn" class="uno-eozo6d uno-c0fc1q uno-lq3jan"></article></a><!--]--><!--[--><a class="uno-kw8rdr group" href="https://twitter.com/henrikvberglund"><article aria-label="Twitter" class="uno-eozo6d uno-ft8da5 uno-67zpc5"></article></a><!--]--><!--]--></section><!--]--></nav> <aside class="uno-blnkeh"><!--[--><!--[--><!--[--><button aria-label="theme: blue" class="uno-94g59b bg-blue-500"></button><!--]--><!--[--><button aria-label="theme: green" class="uno-94g59b bg-green-500"></button><!--]--><!--[--><button aria-label="theme: svelty" class="uno-94g59b uno-co4i4s"></button><!--]--><!--[--><button aria-label="theme: pink" class="uno-94g59b bg-pink-500"></button><!--]--><!--]--><!--]--> <!--[--><button aria-label="dark mode toggle" class="uno-3tzsda"><span class="uno-hu8pks"></span></button><!--]--></aside> <!--[--><div class="uno-s9920x"><div class="uno-pgmxja"><!--[--><!--[--><a aria-label="Swedish flag" class="uno-y457fc uno-hwx25m" hreflang="sv" href="/"></a><!--]--><!--[--><a aria-label="English flag" class="uno-y457fc uno-eka199 uno-6hbawj" hreflang="en" href="/en/"></a><!--]--><!--[--><a aria-label="Japanese flag" class="uno-y457fc uno-63h716" hreflang="jp" href="/jp/"></a><!--]--><!--]--></div></div><!--]--></header> <!--[--><!--[--><section id="page-section" class="uno-mofbav"><!--[--><h1 class="uno-5n59yb"><!--[-->Welcome to Henrik Berglund's portfolio page!<!--]--></h1><!--]--> <!--[--><div class="uno-q3zbfg"><!--[--><p class="uno-t820d0">Hi! I'm Henrik Berglund, a recently graduated Frontend Developer from Nackademin. I love Svelte and UnoCSS/Tailwind and strive to create accessible websites that are easy to use and appealing.</p> <p class="uno-yrrhze">The purpose of this site is to link to some of my projects. Feel free to check them out!</p> <a href="/en/projects" class="uno-wzem1b">Projects</a><!--]--></div><!--]--></section><!--]--><!--]--></main> <!--[--><!--[--><footer><a class="uno-i9doce" href="https://github.com/henrikvilhelmberglund">made by <img class="uno-h5bjzq" src="./Henrik.png" alt="avatar">henrikvilhelmberglund</a></footer><!--]--><!--]--><!--]!--><!--]--><!--]--><!--]--><!--]--> <!--[--><!--]!--><!--]-->
+		<div style="display: contents"><!--[--><!--[0--><!--[--><!--[-1--><main id="layout-div" class="uno-lut8z4"><header class="uno-4g9xr0"><nav class="uno-p0sha7"><a class="uno-6er3hr uno-yjvti2" href="/en">Home</a> <a class="uno-6er3hr" href="/en/projects">Projects</a> <section class="uno-9zjszv"><h2 class="uno-u8p3uc">Socials</h2> <!--[--><a class="uno-dfszcr group" href="https://github.com/henrikvilhelmberglund"><article aria-label="Github" class="uno-j2pso9 uno-so7hku"></article></a><a class="uno-dfszcr group" href="https://www.linkedin.com/in/henrikvilhelmberglund/"><article aria-label="LinkedIn" class="uno-j2pso9 uno-ineres uno-vju2iz"></article></a><a class="uno-dfszcr group" href="https://twitter.com/henrikvberglund"><article aria-label="Twitter" class="uno-j2pso9 uno-q07m01 uno-lllxu1"></article></a><!--]--></section><!----></nav> <aside class="uno-x2kvtf"><button aria-label="dark mode toggle" class="uno-2rjxxm"><span class="uno-7wtmkg"></span></button><!----></aside> <div class="uno-h2omnp"><div class="uno-7c7afs"><!--[--><a aria-label="Swedish flag" class="uno-gets9u uno-eirh98" hreflang="sv" href="/" data-sveltekit-reload=""></a><a aria-label="English flag" class="uno-gets9u uno-nmefvl uno-gsjntr" hreflang="en" href="/en" data-sveltekit-reload=""></a><a aria-label="Japanese flag" class="uno-gets9u uno-0ovhn0" hreflang="jp" href="/jp" data-sveltekit-reload=""></a><!--]--></div></div><!----></header> <!--[--><section id="page-section" class="uno-uqkj4r"><h1 class="uno-4l1tr9"><!--[--><!---->Welcome to Henrik Berglund's portfolio page!<!--]--></h1><!----> <div class="uno-7abdi8"><!--[--><p class="uno-0n9c32">Hi! I'm Henrik Berglund, a recently graduated Frontend Developer from Nackademin. I love Svelte and UnoCSS/Tailwind and strive to create accessible websites that are easy to use and appealing.</p> <p class="uno-0789pg">The purpose of this site is to link to some of my projects. Feel free to check them out!</p> <a href="/en/projects" class="uno-jr3x03">Projects</a><!--]--></div><!----></section><!--]--><!----></main> <!--[0--><footer><a class="uno-o5uzf4" href="https://github.com/henrikvilhelmberglund"><!--[--><!--[0-->made by <!--]--><!--[-1--><!--[-1--><img class="uno-51j154" src="./Henrik.png" alt="avatar"/><!----><!--]--><!--]--><!--[0-->henrikvilhelmberglund<!--]--><!--]--><!----></a></footer><!--]--><!----><!--]--><!--]--><!--]--> <!--[-1--><!--]--><!--]-->
 			
 			<script>
 				{
-					__sveltekit_5403u8 = {
+					__sveltekit_vd8mgi = {
 						base: new URL(".", location).pathname.slice(0, -1)
 					};
 
 					const element = document.currentScript.parentElement;
 
-					const data = [null,null];
-
 					Promise.all([
-						import("./_app/immutable/entry/start.DmZdZj3G.js"),
-						import("./_app/immutable/entry/app.EgZTqsB5.js")
+						import("./_app/immutable/entry/start.C6s3ElLr.js"),
+						import("./_app/immutable/entry/app.uHxBDUN6.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 2],
-							data,
+							data: [null,null],
 							form: null,
 							error: null
 						});

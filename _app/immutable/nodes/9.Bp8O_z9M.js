@@ -1,0 +1,6 @@
+import{$ as e,H as t,J as n,L as r,N as i,O as a,R as o,S as s,U as c,V as l,Y as u,_ as d,c as f,l as p,s as m,w as h,x as g,z as _}from"../chunks/lrzh8aLF.js";import"../chunks/CP97kCR3.js";var v=h(`<!> <main class="svelte-1kvxv3v"><nav class="svelte-1kvxv3v"><a href="#" class="svelte-1kvxv3v">Home</a> <a href="#" class="svelte-1kvxv3v">About</a> <a href="#" class="svelte-1kvxv3v">Portfolio</a> <a href="#" class="svelte-1kvxv3v">Team</a> <a href="#" class="svelte-1kvxv3v">Contact</a></nav></main> <article class="uno-cy5gap svg-preview"></article> <aside class="uno-nzxr6j"><input class="uno-i2eozc" id="slider" type="range" min="0"/> <label for="slider"> </label></aside>`,1);function y(h,y){u(y,!0);let b=c(()=>y.data.pugHTML),x=t(0);var S=v(),C=o(S);d(C,()=>a(b).split(`
+`).slice(0,a(x)+1).join(`
+`));var w=_(C,6),T=r(w);f(T);var E=_(T,2),D=r(E,!0);e(E),e(w),i((e,t)=>{p(T,`max`,e),g(D,t)},[()=>a(b).split(`
+`).length-1,()=>a(b).split(`
+`).slice(a(x),a(x)+1).join(`
+`)]),m(T,()=>a(x),e=>l(x,e)),s(h,S),n()}export{y as component};

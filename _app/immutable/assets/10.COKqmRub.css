@@ -1,0 +1,1 @@
+@property --big{syntax:"<number>";inherits:true;initial-value:.4}a.svelte-8slh52{--big:.4;font-size:calc(var(--big)*10rem);color:green;transition:--big .5s ease-in-out}a.svelte-8slh52:hover{--big:1;color:#00f;font-size:calc(var(--big)*10rem)}

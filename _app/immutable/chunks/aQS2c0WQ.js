@@ -1,0 +1,1 @@
+import{r as e,t}from"./DUWW4WVn.js";var n=(e,t)=>t===`sv`?e:`/${t}${e===`/`?``:e}`,r=n=>e(n,t)[0];export{r as n,n as t};
