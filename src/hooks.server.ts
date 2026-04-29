@@ -1,19 +1,19 @@
-import { i18n } from '$lib/i18n'
-import { sequence } from '@sveltejs/kit/hooks'
-/** @type {import('@sveltejs/kit').Handle} */
+import type { Handle } from "@sveltejs/kit"
+import { sequence } from "@sveltejs/kit/hooks"
+import { runWithLocale, loadLocales } from "wuchale/load-utils/server"
+import * as main from "./locales/main.loader.server.svelte.js"
+import { locales } from "./locales/data.js"
+import { getLocale } from "./locales/main.url.js"
 
-export async function unocssHook({ event, resolve }: Parameters<import('@sveltejs/kit').Handle>[0]) {
-  const response = await resolve(event, {
-    transformPageChunk: ({ html }) =>
-      html.replace(
-        '%unocss-svelte-scoped.global%',
-        'unocss_svelte_scoped_global_styles'
-      ),
-  })
-  return response
+await loadLocales(main.key, main.loadIDs, main.loadCatalog, locales)
+
+const localeHook: Handle = async ({ event, resolve }) => {
+	const locale = getLocale(event.url)
+	return await runWithLocale(locale, () =>
+		resolve(event, {
+			transformPageChunk: ({ html }) => html.replace("%sveltekit.lang%", locale),
+		}),
+	)
 }
 
-export const inlangHook = i18n.handle()
-
-export const handle = sequence(inlangHook, unocssHook);
-
+export const handle = sequence(localeHook)

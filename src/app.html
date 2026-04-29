@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="%paraglide.lang%" dir="%paraglide.textDirection%">
+<html lang="%sveltekit.lang%">
 	<head>
 		<meta charset="utf-8" />
 		<!-- <link rel="icon" href="%sveltekit.assets%/favicon.png" />
@@ -13,6 +13,22 @@
 		<meta name="msapplication-TileColor" content="#da532c" />
 		<meta name="theme-color" content="#ffffff" />
 		<link rel="stylesheet" href="%sveltekit.assets%/prism-vsc-dark-plus.css" />
+		<style>
+			@property --hue {
+				syntax: "<number>";
+				inherits: true;
+				initial-value: 0;
+			}
+			@keyframes hue-cycle {
+				to { --hue: 360; }
+			}
+			:root {
+				animation: hue-cycle 60s infinite linear;
+			}
+			@media (prefers-reduced-motion: reduce) {
+				:root { animation: none; }
+			}
+		</style>
 		<link
 			rel="preload"
 			as="font"
@@ -35,6 +51,9 @@
 			} else {
 				document.documentElement.classList.add(localStorage.color);
 			}
+			// resume hue animation from the current wall-clock phase so the value
+			// persists across reloads, language switches, and tabs
+			document.documentElement.style.animationDelay = `-${(Date.now() / 1000) % 60}s`;
 		</script>
 		%unocss-svelte-scoped.global% 
     %sveltekit.head%

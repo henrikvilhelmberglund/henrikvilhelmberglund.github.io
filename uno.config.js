@@ -1,5 +1,5 @@
-import { defineConfig, presetIcons, presetUno, presetWebFonts } from "unocss";
-import { presetForms } from "@julr/unocss-preset-forms";
+import { defineConfig, presetIcons, presetUno, presetWind4, presetWebFonts } from "unocss";
+// import { presetForms } from "@julr/unocss-preset-forms";
 import { presetHeroPatterns } from "@julr/unocss-preset-heropatterns";
 import { colors } from "@unocss/preset-mini";
 import { createSafeList } from "./safelist.js";
@@ -21,9 +21,9 @@ export default defineConfig({
 		),
 		...createSafeList(),
 		`font-thin font-extralight font-light font-normal font-medium font-semibold font-bold font-extrabold font-black
-        btn-primary btn-secondary`,
+        btn-primary btn-secondary from-random-950 from-random-100 to-random-300`,
 	],
-	theme: {
+  theme: {
 		animation: {
 			// keyframes: {
 			// 	hue: "{0% {var(--hue):0} 50% {var(--hue):360} 100% {var(--hue):0}",
@@ -37,8 +37,8 @@ export default defineConfig({
 		},
 		colors: {
 			random: {
-				50: "color-mix(in srgb, oklch(95% 0.10 var(--hue)) 30%, oklch(100% 0 360))",
-				100: "color-mix(in srgb, oklch(95% 0.10 var(--hue)) 80%, oklch(100% 0 360))",
+				50: "oklch(95% 0.10 var(--hue))",
+				100: "oklch(95% 0.10 var(--hue))",
 				200: "oklch(90% 0.12 var(--hue))",
 				300: "oklch(85% 0.20 var(--hue))",
 				400: "oklch(74% 0.20 var(--hue))",
@@ -56,8 +56,8 @@ export default defineConfig({
 		},
 	},
 	presets: [
-		presetUno({ dark: "class" }),
-		presetForms(),
+		presetWind4({ dark: "class", }),
+		// presetForms(),
 		presetTheme({
 			theme: themes,
 		}),

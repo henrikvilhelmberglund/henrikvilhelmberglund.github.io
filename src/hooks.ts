@@ -1,4 +1,10 @@
-// file initialized by the Paraglide-SvelteKit CLI - Feel free to edit it
-import { i18n } from "$lib/i18n"
+import type { Reroute } from "@sveltejs/kit"
+import { matchUrl } from "./locales/main.url.js"
+import { deLocalizeDefault } from "wuchale/url"
+import { locales } from "./locales/data.js"
 
-export const reroute = i18n.reroute()
+export const reroute: Reroute = ({ url }) => {
+	const [upath, locale] = deLocalizeDefault(url.pathname, locales)
+	const { path } = matchUrl(upath, locale)
+	return path ?? url.pathname
+}
